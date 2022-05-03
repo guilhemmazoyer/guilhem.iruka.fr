@@ -1,0 +1,45 @@
+/* Donne le style aux pages de l'album photo qui apparaissent lors du clique sur une des images */
+html {
+font-size: 100%;
+margin:0;
+padding:0;
+}
+
+body {
+color: #000;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 100%;
+background: #000;
+margin: 0;
+}
+
+/* évite la superposition du footer sur le contenu et centre les éléments de la page */
+section {
+	margin-bottom:50px;
+	text-align:center;
+}
+
+section img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1 {
+	color:white;
+}
+
+/* Définit le pied de page ainsi que le placement et la taille des éléments qu'il contient */
+footer {
+	position:fixed;
+	bottom:0;
+	height:40px;
+	width:100%;
+	text-align:center;
+	background-color:#888888;
+	color:white;
+}
+
+footer img {
+	float:left;
+}

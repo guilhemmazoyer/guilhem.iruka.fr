@@ -1,0 +1,75 @@
+#menu{
+    width: 90vw;
+    margin: 0px auto 0px auto;
+}
+
+#menu ul{
+    list-style-type: none;
+}
+
+#menu li{
+    float: left;
+    width: 16.6%;/*100% divise par le nombre d'elements de menu*/
+}
+
+/*Evite que le menu n'ait une hauteur nulle*/
+#menu ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#menu .sysButtons{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    padding: 10px;/*Agrandit le menu et espace la bordure du texte*/
+}
+
+#menu .sysButtons:hover{
+    color: rgb(196, 127, 0);
+}
+
+#menu ul li #A0{
+    background-color: rgb(204, 204, 204);
+}
+
+.sysTexts{
+    position: absolute;
+    width: 90vw;
+    margin-left: 4vw;
+    padding: 0px 1vw 1vh 1vw;
+    background-color: rgb(204, 204, 204);
+    visibility: hidden;
+}
+
+#Introduction {
+    visibility: visible;
+}
+
+h1{
+    text-decoration: underline;
+}
+
+p{
+    font-size: 120%;
+}
+
+pre, span, h2{
+    font-family: consolas;
+}
+
+.verticalImage{
+    height: 60vh;
+    width: auto;
+}
+
+.horintalImage{
+    width: 60vh;
+    height: auto;
+}
+
+iframe{
+    width: 43vw;
+    height: 49.45vh;
+}

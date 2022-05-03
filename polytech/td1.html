@@ -1,0 +1,148 @@
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="./td1.css">
+	<title>HTML</title>
+	<link rel="icon" type="image/png" href="./image/polytech_logo_small.png" />
+</head>
+
+<body>
+	<center>
+		<div id="menu" class="menu_container">
+
+			<a href="./index.html"> <img class="logomenu" src="image/polytech_logo.png"/> </a>
+
+			<div id="menu_banner">
+				<img src="./image/menu_banner.png"/>
+			</div>
+
+			<a href="./td1.html"> <img class="menu_container_img" src="image/TD1_o.png"/> </a>
+			<a href="./td2.html"> <img class="menu_container_img" src="image/TD2_o.png"/> </a>
+			<a href="./td3.html"> <img class="menu_container_img" src="image/TD3_o.png"/> </a>
+			<a href="./td4.html"> <img class="menu_container_img" src="image/TD4_o.png"/> </a>
+			
+		</div>
+
+		<div id="contenu">
+			<h1>/ hmtl /</h1>
+
+			<h2>Cr&#233er un fichier html :</h2>
+			<p>Pour cela il suffit de changer l&#146extension d&#146un document texte .txt en .html</p>
+			<img class="img_html" src="image/creer_fichier_html.jpg"/>
+			
+			<h2>Les balises :</h2>
+			<p>Le code dans le langage html est compos&#233 de suite de balises qui forment le site sur lequel vous naviguer, il dxiste de nombreuses balises qui, pour certaines, fonctionnent ensembles.<br>
+			Elles permettent d&#146&#233crire des titres, d&#146&#233crire des paragraphes, de placer des images et tant d&#146autres choses<br>
+			Elles fonctionnent par deux, une ouvrante et une seconde fermante.<br>
+			Comme dans ce paragraphe d&#146exemple : p Je m&#146appelle Guilhem /p</p>
+				
+			<h2>Ins&#233rer des titres et des paragraphes :</h2>
+			<p>Pour ins&#233rer des titres il faut utiliser la balise h1 et pour les paragraphes p<br>
+			Il existe une hi&#233rarchie naturelle des titres, h1 sera toujours plus important aux yeux du site qu&#146un h2<br>
+			Pour que du texte s&#146affiche il faut &#233crire notre texte entre les balises qui ouvre et ferme la zone de texte.</p>
+			
+			<h2>Cr&#233er des listes ordonn&#233es ou non :</h2>
+			<p>Pour cr&#233er une liste il faut utiliser une combianaison de balises.<br>
+			Il faut entourer la liste par des balises ol /ol ou ul /ul et &#233crire chaque &#233l&#233ment entre des balises li /li
+			En voilà un exemple :</p>
+			<pre>
+			ol
+			li du beurre /li
+			li des ouefs /li
+			li de la farine /li
+			/ol
+
+			ul
+			li du beurre /li
+			li des oeufs /li
+			li de la farine /li
+			/ul
+			</pre>
+			<img class="img_html" src="image/listes.jpg"/>
+
+		<h2>
+			Ins&#233rer des liens web :
+			</h2>
+		<p>
+		En utilisant la balise a /a l&#146&#233l&#233ment sp&#233cifi&#233 devient cliquable et en utilisant l&#146&#233l&#233ment href="" on peut sp&#233cifier le site recherch&#233.<br>
+		En exemple :<br>
+		</p>
+		<pre>
+		a href="https://www.google.com/intl/fr_fr/chrome/" Google Chrome /a
+		</pre>
+		<img class="img_html" src="image/lien.jpg"/>
+			
+		<h2>
+			Ins&#233rer des images et un lien entre deux pages :
+			</h2>
+		<p>
+		En utilisant la balise img src="", le src permet de localiser l&#146image soit sur internet soit dans le fichier du site.<br>
+		img src="image/logo.jpg"/<br>
+		<br>
+		Nous pouvons cumuler image et lien cliquable<br>
+		a href="./home.html"   img src="image/logo.jpg"/   /a
+			</p>
+			
+		<h2>
+			Ins&#233rer des images et un lien entre deux pages :
+			</h2>
+		<p>
+		En utilisant la balise img src="", le src permet de localiser l&#146image soit sur internet soit dans le fichier du site.<br>
+		img src="image/logo.jpg"/<br>
+		<br>
+		Nous pouvons cumuler image et lien cliquable<br>
+		a href="./home.html"   img src="image/logo.jpg"/   /a<br>
+			</p>
+
+			<h1>
+				/ .css /
+			</h1>
+
+		<h2>
+			Cr&#233er un fichier css :
+			</h2>
+		<p>
+			Pour cela il suffit de changer l&#146extension d&#146un document texte .txt en .css
+			</p>
+		<img class="img_html" src="image/creer_fichier_css.jpg"/>
+		<br>
+
+		<h2>
+			Donner du style :
+			</h2>
+		<p>
+		Grâce aux fichiers css nous pouvons donner du style à nos pages html. Pour celà il faut sp&#233cifier dans le code html la r&#233f&#233rence du fichier .css<br>
+		Nous pouvons styliser tous les &#233l&#233ments html: les titres, les paragraphes, les images et même la forme même de la page.<br>
+		Pour celà il faut sp&#233cifier l&#146&#233l&#233ment à modifier puis lui appliquer les modifications grâce aux balises propres au css.<br>
+		En voilà quelques exemples :<br>
+		*display: block;<br>
+		*margin: 0px;<br>
+		*font-family: Comic Sans MS;<br>
+		*background-image: url();<br>
+		*padding: 5px;<br>
+		*width: 180px;<br>
+		*height: 180px;<br>
+			</p>
+		<br>
+			
+		<h2>
+			#class et .id :
+			</h2>
+		<p>
+		On peut dans le fichier .html des class et des id aux diff&#233rents &#233l&#233ments.<br>
+		Les class permettent de regrouper tous un panel d&#146&#233l&#233ment auquels on souhaite appliquer une même modification.<br>
+		Les id eux permettent de diff&#233rencier un &#233l&#233ment ind&#233pendament des autres, pour lui appliquer des modifications propres.
+			</p>
+			
+		</div>
+	</center>
+
+	<div id="piedpage">
+		<p>
+			Guilhem Mazoyer
+		</p>
+	</div>
+
+</body>
+
+</html>

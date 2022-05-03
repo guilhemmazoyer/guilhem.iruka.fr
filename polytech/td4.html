@@ -1,0 +1,74 @@
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="./td4.css">
+	<title>Excel: régréssion linéaire</title>
+	<link rel="icon" type="image/png" href="./image/polytech_logo_small.png" />
+</head>
+
+	<body>
+<center>
+<div id="menu" class="menu_container">
+
+	<a href="./index.html"> <img class="logomenu" src="./image/polytech_logo.png"/> </a>
+
+	<div id="menu_banner">
+		<img class="menu_banner_img" src="./image/menu_banner.png"/>
+	</div>
+
+	<a href="./td1.html"> <img class="menu_container_img" src="./image/TD1_o.png"/> </a>
+	<a href="./td2.html"> <img class="menu_container_img" src="./image/TD2_o.png"/> </a>
+	<a href="./td3.html"> <img class="menu_container_img" src="./image/TD3_o.png"/> </a>
+	<a href="./td4.html"> <img class="menu_container_img" src="./image/TD4_o.png"/> </a>
+	
+</div>
+
+<div id="contenu">
+<h1>
+	Excel<br>
+	/ Regression /
+</h1>
+
+<h2>
+	Courbe de tendance
+</h2>
+
+<p>
+	A partir de donn&#233es nous pouvons r&#233aliser un nuages de points.<br>
+	Ce nuage de point nous permet de construire une courbe de tencdanece dont nous connaissons la pente et l&#146&#233quation.<br>
+	Cette courbe permet d&#146avoir une tendance qui nous permet de faire une supposition impr&#233cise sur les prochaines valeurs.
+</p>
+<img class="img_regression" src="./image/regression_lineaire.jpg"/> 
+
+<h2>
+	R&#233gression saisonnière
+</h2>
+
+<p>
+	Dans le cas de valeurs qui varient du tout au tout une courbe de tendance sera très imparfaite et n&#146apportera rien.<br>
+	Tout d&#146abord, grâce aux fonctions PENTE et ORDONNEE.ORIGINE, nous allons calculer les paramètres de la r&#233gression lin&#233aire, afin d&#146obtenir une tendance (celle de la courbe pr&#233c&#233dente).<br>
+	Nous pouvons alors calculer l&#146&#233cart entre la valeur mesur&#233e et la tendance calcul&#233e.<br>
+	Il devient visible que l&#146on a bien un rythme saisonnier.
+	</p>
+<img class="img_regression" src="./image/regression_saisoniere.jpg"/>
+<br>
+
+<p>
+	On va essayer de pr&#233voir les 4 prochains trimestres. Pour cela, on calcule les 4 valeurs suivantes de la tendance.<br>
+	On va ensuite cr&#233er une moyenne des &#233carts (un lissage) à partir des donn&#233es que l&#146on a.<br>
+	Il suffit, pour finir, de calculer l&#146estimation par simple addition de la tendance avec la moyenne des &#233carts.<br>
+	On peut enfin tracer le r&#233sultat pour visualiser notre pr&#233diction.
+	</p>
+<img class="img_regression" src="./image/regression_saisoniere_exercice.jpg"/>
+
+</div>
+</center>
+
+<div id="piedpage">
+	<p>
+		Guilhem Mazoyer
+	</p>
+</div>
+
+	</body>
+</html>

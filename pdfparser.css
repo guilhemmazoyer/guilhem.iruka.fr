@@ -1,0 +1,79 @@
+p{
+    text-align: center;
+    font-size: 3em;
+}
+
+div p img{
+    height: 1.5em;
+    width: 1.5em;
+}
+
+#download{
+    width: 100%;
+}
+
+#download_button{
+    background-color: rgb(33, 197, 0);
+    border: 0.2em solid rgb(43, 207, 10);
+    width: 50vw;
+    height: 10vh;
+    float: left;
+    margin-left: 25vw;
+	text-align: center;
+    margin-bottom: 3%;
+}
+
+#download_button a{
+    text-decoration: none;
+}
+
+#download_button p{
+    position: relative;
+    top: 50%;
+    transform: perspective(1px) translateY(-50%);
+    color: white;
+}
+
+#download_button:hover{
+    border: 0.2em solid rgb(44, 230, 7);
+}
+
+#download_button:hover p{
+    color: rgb(255, 228, 73);
+}
+
+#content{
+    width: 100vw;
+    background-color: rgb(128, 61, 61);
+}
+
+#content div{
+    width: 30vw;
+    height: 51vh;
+	text-align: center;
+    box-shadow: 0 0 0.5em black;
+}
+
+#content div p{
+    position: relative;
+    top: 50%;
+    transform: perspective(1px) translateY(-50%);
+}
+
+#content .content_block{
+    display: block; /*Toute la surface sera cliquable*/
+    color: white;
+    border: 0.1em solid black;
+}
+
+#content .content_block:hover{
+    color: rgb(255, 228, 73);
+}
+
+#git{
+    float: left;
+    margin-left: 35vw;
+    background-image:   linear-gradient(rgba(0, 0, 100, 0.5), rgba(83, 83, 0, 0.5)),
+                        url("./assets/images/icons/github_icon.jpg");
+                        background-size: cover;
+}

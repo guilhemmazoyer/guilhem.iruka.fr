@@ -1,0 +1,58 @@
+body {
+    background-image: url("./assets/images/home_background.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@font-face {
+    font-family: "likesnow";
+    src: url("./assets/fonts/likesnow.ttf") format("truetype");
+}
+
+#topmenu{
+    margin-bottom: 0px;
+}
+
+.title{
+    height: 94%;
+}
+
+.title .content{
+    width: 100%;
+    padding-top: 14vh;
+    text-align: center;
+    text-shadow: 1px 1px 5px black;
+}
+
+.title .content h1{
+    font-family: "likesnow", sans-serif;
+    color: #E5A800;
+    font-size: 650%;
+}
+
+.title .content h3{
+    color: white;
+    font-size: 200%;
+}
+
+.title .content .whoami h2{
+    font-family: "likesnow", sans-serif;
+    color: #E5A800;
+    font-size: 350%;
+}
+
+.title .content .whoami p{
+    color: white;
+    font-size: 150%;
+    line-height: 1.4;
+}
+
+.title .content .whoami{
+    margin-top: 24vh;
+    margin-left: 25vw;
+    padding: 1vw;
+    width: 50vw;
+    background-color: #1a57ffa0;
+    border-radius: 4em;
+}
