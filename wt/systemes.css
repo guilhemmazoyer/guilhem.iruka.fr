@@ -9,7 +9,7 @@
 
 #menu li{
     float: left;
-    width: 10%;/*100% divise par le nombre d'elements de menu*/
+    width: 14.28%;/*100% divise par le nombre d'elements de menu*/
 }
 
 /*Evite que le menu n'ait une hauteur nulle*/
