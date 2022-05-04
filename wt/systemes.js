@@ -6,12 +6,12 @@ var texts = document.getElementsByClassName("sysTexts");
 function switchSys(id) {
 
     // mets tous les boutons en blanc
-    for (let i = 0; i < 6; i++) {
+    for (let i = 0; i < 7; i++) {
 		buttons[i].style.backgroundColor = "rgb(255, 255, 255)";
 	}
 
     // cache tous les textes
-    for (let i = 0; i < 6; i++) {
+    for (let i = 0; i < 7; i++) {
 		texts[i].style.visibility = "hidden";
 	}
 
@@ -40,6 +40,10 @@ function switchSys(id) {
 
         case "A5":
             document.getElementById("Pouvoirs").style.visibility = "visible";
+            break;
+
+        case "A6":
+            document.getElementById("Accessibilites").style.visibility = "visible";
             break;
         
         default:
