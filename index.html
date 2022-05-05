@@ -24,20 +24,30 @@
 
 
 	<!-- Content-->
-	<div class="title"> 
-		<div class="content">
-			<h1>Guilhem</h1>
-			<h3><em>Game Designer - D&#233;veloppeur - Musicien</em></h3>
-			<div class="whoami">
-				<h2>Qui suis-je ?</h2>
+	<div class="content">
+		<div class="firstpage">
+			<div class="title">
+				<h1>Guilhem</h1>
+				<h3><em>Game Designer - D&#233;veloppeur - Musicien</em></h3>
+			</div>
+			<div class="whoami" onclick="toBottom()">
+					<h2>Qui suis-je ?</h2>
 				<p>
-					<br>Mazoyer Guilhem, 20 ans, musicien et d&#233;veloppeur.
+					<br>Mazoyer Guilhem, 20 ans, game designer, d&#233;veloppeur et musicien.
 					<br>Après un BAC S SVT opt. Physique, j'ai rejoint Polytech Angers.
 					<br>Puis je suis rentr&#233; dans une licence d'informatique en L2 à Vannes.
 					<br>Aujourd'hui je suis au sein du mastère ICAN Game Design.
 					<br>Je pratique la musique depuis 13 ans en tant que flutiste.
 				</p>
 			</div>
+			<script>
+				function toBottom() {
+					window.scroll({
+						top: window.innerHeight,
+						behavior: "smooth"
+					});
+				}
+			</script>
 		</div>
 	</div>
 </body>

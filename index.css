@@ -14,45 +14,46 @@ body {
     margin-bottom: 0px;
 }
 
-.title{
-    height: 94%;
-}
-
-.title .content{
-    width: 100%;
-    padding-top: 14vh;
+.content .firstpage{
     text-align: center;
     text-shadow: 1px 1px 5px black;
+    width: 100%;
 }
 
-.title .content h1{
+.content .firstpage .title{
+    width: 100%;
+    padding-top: 20vh;
+    padding-bottom: 45vh;
+}
+
+.content .firstpage .title h1{
     font-family: "likesnow", sans-serif;
     color: #E5A800;
     font-size: 650%;
 }
 
-.title .content h3{
+.content .firstpage .title h3{
     color: white;
     font-size: 200%;
 }
 
-.title .content .whoami h2{
+.content .firstpage .whoami{
+    padding: 0 0 5vh 0;
+    width: 100%;
+    background-color: rgb(22, 22, 22);
+    box-shadow: 0 0 0.5em rgb(22, 22, 22);
+}
+
+.content .firstpage .whoami h2{
+    padding-top: 4vh;
+    margin-bottom: 3vh;
     font-family: "likesnow", sans-serif;
     color: #E5A800;
     font-size: 350%;
 }
 
-.title .content .whoami p{
+.content .firstpage .whoami p{
     color: white;
     font-size: 150%;
     line-height: 1.4;
-}
-
-.title .content .whoami{
-    margin-top: 24vh;
-    margin-left: 24vw;
-    padding: 1vw;
-    width: 50vw;
-    background-color: #1a57ffa0;
-    border-radius: 4em;
 }
