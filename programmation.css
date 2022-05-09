@@ -31,14 +31,12 @@ body {
 .other-neon-title {
     display: inline-block;
     width: fit-content;
-
     font-size: 3em;
     background: radial-gradient(hsl(64, 100%, 75%), var(--clr-neon));
     color: #080647;
     border: var(--clr-neon) 0.125em solid;
     border-radius: 0.25em;
     padding: 0.25em 0.75em;
-    box-shadow: 0 0 2em 0.25em var(--clr-neon);
 }
 
 #title {
@@ -58,51 +56,14 @@ body {
     border: var(--clr-neon) 0.125em solid;
     border-radius: 0.25em;
     padding: 0.25em 1em;
-    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.25),
-                0 0 0.25em var(--clr-neon);
     box-shadow: inset 0 0 0.5em 0 var(--clr-neon),
                 0 0 0.5em 0 var(--clr-neon);
-}
-
-.neon-button-shadow::before {
-    pointer-events: none;
-    content: '';
-    position: absolute;
-    background-color: var(--clr-neon);
-    width: 100%;
-    height: 100%;
-    top: 100%;
-    left: 0;
-
-    transform: perspective(2em)
-            rotateX(20deg)
-            scale(1, 0.35);
-    filter: blur(0.9em);
-    opacity: 0.8;
-}
-
-.neon-button::after {
-    pointer-events: none;
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-
-    box-shadow: 0 0 2em 0.25em var(--clr-neon);
-    opacity: 0;
-    transition: opacity 75ms linear;
-
 }
 
 .neon-button:hover, .neon-button:focus {
     background: radial-gradient(hsl(64, 100%, 75%), var(--clr-neon));
     color: #080647;
     box-shadow: 0 0 2em 0.25em var(--clr-neon);
-    text-shadow: none;
 }
 
 
@@ -196,10 +157,10 @@ body {
 
 .bg-1 {
     background: #9E9329;
-    box-shadow: 0 0 0.5em 0.25em hsl(70, 30%, 53%);
+    /* box-shadow: 0 0 0.5em 0.25em hsl(70, 30%, 53%); */
 }
 
 .bg-2 {
     background: #939F55;
-    box-shadow: 0 0 0.5em 0.25em hsl(54, 59%, 44%);
+    /* box-shadow: 0 0 0.5em 0.25em hsl(54, 59%, 44%); */
 }
