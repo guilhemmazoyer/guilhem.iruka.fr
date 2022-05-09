@@ -13,8 +13,6 @@
 }
 
 #topmenu li{
-    float: left;
-    width: 10%;/*100% divise par le nombre d'elements de menu*/
     text-align: center;/*Centre le  texte dans les elements de menu*/
 }
 
@@ -33,7 +31,25 @@
     padding: 10px 0px;/*Agrandit le menu et espace la bordure du texte*/
 }
 
-.topmenu-items:hover, .topmenu-items:focus{
+.left .topmenu-items:hover, .left .topmenu-items:focus{
     color: orange;
     border-bottom: 2px solid gold;
+}
+
+.left {
+    float: left;
+    width: 10%;/*100% divise par le nombre d'elements de menu*/
+}
+
+.right {
+    margin-left: 5px;
+    float: right;
+    width: 30px;
+    height: 30px;
+}
+
+.right img{
+    width: 100%;
+    height: 100%;
+    transform: translateY(-5px);
 }
