@@ -26,7 +26,7 @@
 	<!-- Content-->
 	<div class="content">
 		<div class="firstpage">
-			<div class="title">
+			<div id="title">
 				<h1>Guilhem</h1>
 				<h3><em>Game Designer - D&#233;veloppeur - Musicien</em></h3>
 			</div>
@@ -50,6 +50,14 @@
 			</script>
 		</div>
 	</div>
+	<script>
+		let title = document.getElementById('title')
+
+		window.addEventListener('scroll', function(){
+			let value = window.scrollY;
+			title.style.top = 'calc(20vh + ' + value + '*0.2px)';
+		})
+	</script>
 </body>
 
 </html>

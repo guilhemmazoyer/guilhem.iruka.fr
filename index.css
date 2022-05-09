@@ -10,41 +10,41 @@ body {
     src: url("./assets/fonts/likesnow.ttf") format("truetype");
 }
 
-#topmenu{
-    margin-bottom: 0px;
-}
-
-.content .firstpage{
+.firstpage{
     text-align: center;
     text-shadow: 1px 1px 5px black;
     width: 100%;
 }
 
-.content .firstpage .title{
-    width: 100%;
-    padding-top: 20vh;
-    padding-bottom: 45vh;
+#title{
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+    top: calc();
+    top: 20vh;
 }
 
-.content .firstpage .title h1{
+#title h1{
     font-family: "likesnow", sans-serif;
     color: #E5A800;
     font-size: 650%;
 }
 
-.content .firstpage .title h3{
+#title h3{
     color: white;
     font-size: 200%;
 }
 
-.content .firstpage .whoami{
+.whoami{
+    position: relative;
+    top: 63vh;
     padding: 0 0 5vh 0;
     width: 100%;
     background-color: rgb(22, 22, 22);
     box-shadow: 0 0 0.5em rgb(22, 22, 22);
 }
 
-.content .firstpage .whoami h2{
+.whoami h2{
     padding-top: 4vh;
     margin-bottom: 3vh;
     font-family: "likesnow", sans-serif;
@@ -52,7 +52,7 @@ body {
     font-size: 350%;
 }
 
-.content .firstpage .whoami p{
+.whoami p{
     color: white;
     font-size: 150%;
     line-height: 1.4;
