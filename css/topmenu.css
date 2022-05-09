@@ -8,24 +8,24 @@
     box-shadow: 0 0 0.5em rgb(22, 22, 22);
 }
 
-#topmenu ul{
+#topmenu-list{
     list-style-type: none;
 }
 
 #topmenu li{
     float: left;
     width: 10%;/*100% divise par le nombre d'elements de menu*/
-    text-align: center;/*Centre le texte dans les elements de menu*/
+    text-align: center;/*Centre le  texte dans les elements de menu*/
 }
 
 /*Evite que le menu n'ait une hauteur nulle*/
-#topmenu ul::after{
+#topmenu-list::after{
     content: "";
     display: table;
     clear: both;
 }
 
-#topmenu a{
+.topmenu-items{
     display: block; /*Toute la surface sera cliquable*/
     text-decoration: none;
     color: white;
@@ -33,7 +33,7 @@
     padding: 10px 0px;/*Agrandit le menu et espace la bordure du texte*/
 }
 
-#topmenu a:hover{
+.topmenu-items:hover, .topmenu-items:focus{
     color: orange;
     border-bottom: 2px solid gold;
 }
