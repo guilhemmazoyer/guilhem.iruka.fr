@@ -38,12 +38,12 @@
 
 .left {
     float: left;
-    width: 10%;/*100% divise par le nombre d'elements de menu*/
+    width: 14%;/*100% divise par le nombre d'elements de menu*/
 }
 
 .right {
-    margin-left: 5px;
     float: right;
+    margin-left: 10px;
     width: 30px;
     height: 30px;
 }
