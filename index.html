@@ -13,16 +13,21 @@
 <body>
 	<nav id="topmenu">
 		<ul id="topmenu-list">
-			<li class="left"><a class="topmenu-items" href="./index.html">Accueil</a></li>
+			<li class="left"><a class="topmenu-items" href="">Accueil</a></li>
 			<li class="left"><a class="topmenu-items" href="./gamedesign.html">Game Design</a></li>
-			<li class="left"><a class="topmenu-items" href="">Programmation</a></li>
+			<li class="left"><a class="topmenu-items" href="./programmation.html">Programmation</a></li>
 			<li class="left"><a class="topmenu-items" href="./musique.html">Musique</a></li>
 			<li class="left"><a class="topmenu-items" href="./wt/index.html">Wyrd's Tales</a></li>
-			<li class="right"><a class="topmenu-items" href="./wt/index.html"><img src="assets/images/icons/github_icon.jpg" alt=""></a></li>
-			<li class="right"><a class="topmenu-items" href="./wt/index.html"><img src="assets/images/icons/github_icon.jpg" alt=""></a></li>
+			<li class="right"><a class="topmenu-items" href="https://www.linkedin.com/in/guilhem-mazoyer-570637214/" target="_blank"><img src="assets/images/icons/linkedin_icon.jpg" alt=""></a></li>
+			<li class="right"><a class="topmenu-items" href="https://github.com/guilhemmazoyer" target="_blank"><img src="assets/images/icons/github.png" alt=""></a></li>
 		</ul>
 	</nav>
 
+	<div class="square un">Mazoyer Guilhem, 20 ans<br>Game Designer, Developpeur et Musicien.</div>
+	<div class="square deux">Inscrit au mastère ICAN Game Design</div>
+	<div class="square trois">Une alliance de travail et de passion !</div>
+	<div class="square quatre">Musicien depuis 13ans</div>
+	<div class="cv"><a href="./assets/documents/cv.pdf" target="_blank"><img src="./assets/images/cv.png"></a></div>
 
 	<!-- Content-->
 	<div class="content">
@@ -34,15 +39,15 @@
 
 			<div class="whoami" onclick="toBottom()">
 					<h2>Qui suis-je ?</h2>
-				<p>
-					<br>Mazoyer Guilhem, 20 ans, game designer, d&#233;veloppeur et musicien.
-					<br>Après un BAC S SVT opt. Physique, j'ai rejoint Polytech Angers.
-					<br>Puis je suis rentr&#233; dans une licence d'informatique en L2 à Vannes.
-					<br>Aujourd'hui je suis au sein du mastère ICAN Game Design.
-					<br>Je pratique la musique depuis 13 ans en tant que flutiste.
-				</p>
 			</div>
+			<script>function toBottom() {
+				window.scroll({
+					top: window.innerHeight + 1000,
+					behavior: "smooth"
+				});
+			}</script>
 		</div>
+		<div id="desccv"></div>
 	</div>
 </body>
 
