@@ -1,5 +1,70 @@
+/* Fonts */
+@font-face {font-family: "salsa"; src: url("./assets/fonts/Salsa-Regular.ttf") format("truetype");}
+@font-face {font-family: "wallpainter"; src: url("./assets/fonts/Wall-Painter.ttf") format("truetype");}
+
+:root {
+    --clr-neon: hsl(64, 99%, 67%);
+}
+
+body {
+    background: radial-gradient(#111368, #0B0438);
+    width: 100%;
+    height: auto;
+}
+
+.neon-title {
+    padding: 10vh 0 calc(15vh - 2rem) 0;
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.other-neon-title {
+    display: inline-block;
+    width: fit-content;
+    font-size: 3em;
+    background: radial-gradient(hsl(64, 100%, 75%), var(--clr-neon));
+    color: #080647;
+    border: var(--clr-neon) 0.125em solid;
+    border-radius: 0.25em;
+    padding: 0.25em 0.75em;
+}
+
+
+#title {
+    font-family: wallpainter;
+    transform: translateY(-10px);
+}
+
+
+.content {
+    display: grid;
+    gap: 3rem 3rem;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem;
+}
+
 .audio{
-    margin-bottom: 2%;
-    margin-left: 2%;
     z-index: 0;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 1%;
+    color: white;
+    border-radius: 1em;
+    font-family: salsa;
+}
+
+.bg-1 {
+    background: hsl(26, 100%, 49%);
+}
+
+.bg-2 {
+    background: hsl(26, 100%, 41%);
+}
+
+@media screen and (max-width: 1153px) {
+    .content {
+        grid-template-columns: 1fr;
+    }
 }

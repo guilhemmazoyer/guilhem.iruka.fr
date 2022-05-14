@@ -62,7 +62,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     aspect-ratio: 16 / 11;
-    height: 95%;
+    width: calc(100% - 4%);
     border-radius: 1em;
     box-shadow: 0 0 0.5em 0.25em black;
 }
