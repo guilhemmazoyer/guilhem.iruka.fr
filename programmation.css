@@ -13,7 +13,7 @@
 }
 
 body {
-    background: radial-gradient(#13105F, #07033E);
+    background: radial-gradient(#111368, #0B0438);
     width: 100%;
     height: auto;
 }
@@ -141,7 +141,7 @@ body {
 .card-description a{
     position: absolute;
     right: 1vw;
-    bottom: 2vh;
+    bottom: 1vw;
 }
 
 
@@ -156,13 +156,13 @@ body {
 }
 
 .bg-1 {
-    background: #FF7000;
+    background: hsl(26, 100%, 49%);
     /* background: #9E9329; */
     /* box-shadow: 0 0 0.5em 0.25em hsl(70, 30%, 53%); */
 }
 
 .bg-2 {
-    background: #FF7000;
+    background: hsl(26, 100%, 41%);
     /* background: #939F55; */
     /* box-shadow: 0 0 0.5em 0.25em hsl(54, 59%, 44%); */
 }
