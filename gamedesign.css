@@ -166,3 +166,20 @@ body {
     /* background: #939F55; */
     /* box-shadow: 0 0 0.5em 0.25em hsl(54, 59%, 44%); */
 }
+
+
+/* Responsive */
+
+@media screen and (max-width: 1153px) {
+    .content {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-col-span-3 {
+        grid-column: span 1;
+    }
+    
+    .grid-col-span-5 {
+        grid-column: span 5;
+    }
+}

@@ -53,3 +53,11 @@
     height: 100%;
     transform: translateY(-5px);
 }
+
+/* Responsive */
+
+@media screen and (max-width: 1153px) {
+    .left {
+        width: 18%;
+    }
+}
