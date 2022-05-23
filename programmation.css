@@ -115,7 +115,6 @@ body {
     border-radius: 1em;
     aspect-ratio: 16 / 9;
     width: 100%;
-    height: auto;
 }
 
 .card-title {
