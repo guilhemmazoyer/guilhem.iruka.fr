@@ -1,6 +1,11 @@
 @font-face {font-family: "likesnow"; src: url("./assets/fonts/likesnow.ttf") format("truetype");}
 @font-face {font-family: "salsa"; src: url("./assets/fonts/Salsa-Regular.ttf") format("truetype");}
 
+body {
+    background: radial-gradient(#111368, #0B0438);
+    height: 100%;
+}
+
 .firstpage{
     background-image: url("./assets/images/home_background.jpg");
     background-position: center center;
@@ -54,15 +59,16 @@
 }
 
 #desccv {
-    position: relative;
     top: 9vh;
     margin: 2% 0 0 4%;
-    background-image: url(./assets/images/DSC_0479_retouchée.jpg);
+    background-image: url(./assets/images/guilhem.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 1em;
     box-shadow: 0 0 0.5em 0.25em black;
+    height: 80%;
+    width: auto;
 }
 
 .square {
