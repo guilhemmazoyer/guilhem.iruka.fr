@@ -54,6 +54,11 @@
     transform: translateY(-5px);
 }
 
+#selected {
+    color: orange;
+    border-bottom: 2px solid gold;
+}
+
 /* Responsive */
 
 @media screen and (max-width: 1153px) {
