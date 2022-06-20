@@ -73,3 +73,11 @@ iframe{
     width: 43vw;
     height: 49.45vh;
 }
+
+/* preloaders */
+.preloader{
+    background: #000 url(../assets/images/load/load.gif) no-repeat center center;
+    background-size: 50%;
+    height: 100%;
+    width: 43vw;
+}

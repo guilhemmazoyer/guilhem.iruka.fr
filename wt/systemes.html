@@ -43,8 +43,10 @@
 
 		<p>La phase d'introduction de tous mes projets au sein du jeu Minecraft ce fait d'une seule et même manière. Une petite animation faisant apparaitre, sous un glissement de couleur, le visage de mon skin.
 			<br><br>Voici un exemple :<br></p>
-		
-			<iframe src="https://www.youtube-nocookie.com/embed/G0pXAvLEIeM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			
+			<div class="preloader">
+				<iframe src="https://www.youtube-nocookie.com/embed/G0pXAvLEIeM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
 		
 		<p><br>Cette animation est r&#233;alis&#233;e en remplaçant ce que le joueur voit de manière successive.
 			<br>A chaque remplacement la structure est remplac&#233;e par la suivante, stock&#233;e dans un endroit non visible.
@@ -127,7 +129,9 @@ tp <span style="color: #996633">@a</span>[tag<span style="color: #666666">=</spa
 			<br>Cette fonctionnalit&#233; est encore en prototypage car assez complexe à mettre en place. Il faut faire des choix quant à l'entit&#233; viser. Faut-il viser la plus proche ? Celle la plus en face du joueur ? Celle la plus faible ou plus forte ? Celle possedant le moins de point de vie ?
 			<br>La force de l'aide peut être ajust&#233;e entre light, medium et hard.
 			<br><br>En voilà une preview de l'assistance medium puis hard :<br></p>
-			<iframe src="https://www.youtube-nocookie.com/embed/mEsUSJXfyQs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<div class="preloader">
+				<iframe src="https://www.youtube-nocookie.com/embed/mEsUSJXfyQs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
 
 			<br><br><h2>is_assist.mcfunction</h2>
 <div style="color: #ffffff; overflow:auto; width:auto; background: #111827;padding:1%;border-radius: 0.5em;"><pre style="margin: 0; line-height: 125%">execute as <span style="color: #996633">@p</span>[tag<span style="color: #666666">=</span>aim<span style="color: #666666">.</span>assist<span style="color: #666666">.</span>light] run function <span style="color: #AA6600">general:</span>aim<span style="color: #666666">/</span>assist_light
@@ -158,8 +162,12 @@ execute anchored eyes facing entity <span style="color: #996633">@e</span>[type<
 			<br>Ici nous nous int&#233;ressons principalement aux d&#233;placements. Ils sont mis en marche par de nombreuses petites t&#233;l&#233;portations du joueurs vers sa destination. Dans Minecraft le temps est d&#233;coup&#233; en ticks. 1 tick vaut 1/20 seconde. Si nous voulons qu'un joueur aille du point a au point B en 8 secondes il faudra d&#233;couper son d&#233;placement en 160 fractions de d&#233;placement (1 par tick).
 			<br>Cela donne en pratique de jolis rendus pour mettre en scène les personnages non joueurs, montrer des &#233;vènements (porte qui s'ouvre) et pour pr&#233;senter des lieux.
 		<br><br>En voilà deux exemples :<br></p>
-		<iframe src="https://www.youtube-nocookie.com/embed/nRxlCcEnf-Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
-		<iframe src="https://www.youtube-nocookie.com/embed/8SsEH93UNiA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+		<div class="preloader">
+			<iframe src="https://www.youtube-nocookie.com/embed/nRxlCcEnf-Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+		</div>
+		<div class="preloader">
+			<iframe src="https://www.youtube-nocookie.com/embed/8SsEH93UNiA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+		</div>
 
 		<br><h2>loop.mcfunction</h2>
 <div style="background: #ffffff; overflow:auto; width:auto; color: #ffffff;background: #111827;padding:1%;border-radius: 0.5em;">
@@ -203,7 +211,9 @@ scoreboard players reset <span style="color: #996633">@s</span> cinematic<span s
 		<p>Permettre au joueur de discuter avec les personnages non joueur du jeu est essentiel pour l'interraction et l'immersion.
 			<br>Pour cela, le jeu v&#233;rifie très r&#233;gulièrement si le joueur a int&#233;ragi avec un NPC. Si c'est le cas, le NPC vis&#233; d&#233;clenche alors son interraction. Ca peut n'être qu'une phrase, mais ça peut aussi ouvrir une boutique ou lancer une cin&#233;matique.
 		<br><br>Exemple d'un dialogue basique dans les rues de Glanom :<br></p>
-		<iframe src="https://www.youtube-nocookie.com/embed/m7RT_gPfosQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<div class="preloader">
+			<iframe src="https://www.youtube-nocookie.com/embed/m7RT_gPfosQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
 
 		<br><br><h2>mainsmalltalks.mcfunction</h2>
 <div style="color: #ffffff; overflow:auto; width:auto; background: #111827; padding:1%; border-radius: 0.5em;"><pre style="margin: 0; line-height: 125%">execute as <span style="color: #996633">@a</span>[scores<span style="color: #666666">=</span>{smalltalk1<span style="color: #666666">=</span><span style="color: #6600EE; font-weight: bold">1</span><span style="color: #666666">..</span>}] at <span style="color: #996633">@s</span> <span style="color: #008800; font-weight: bold">if</span> entity <span style="color: #996633">@e</span>[tag<span style="color: #666666">=</span>smalltalk1,distance<span style="color: #666666">=..</span><span style="color: #6600EE; font-weight: bold">3.3</span>] run function <span style="color: #AA6600">smalltalks:</span>glanom<span style="color: #666666">/</span>smalltalk1
@@ -235,7 +245,9 @@ scoreboard players reset <span style="color: #996633">@a</span>[scores<span styl
 			<br>Cependant les t&#233;l&#233;portations ont une autre utilit&#233;e, pour les concepteurs cette fois. Des lieux ont &#233;t&#233; enregistr&#233;s, et nous (les personnes ayant travaill&#233; sur le projet) pouvons nous y t&#233;l&#233;porter à notre guise.
 			<br><br>Exemple pour la t&#233;l&#233;portation vers la zone Air :</p>
 
-			<iframe src="https://www.youtube-nocookie.com/embed/jU48bnGlQX4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br><hr><br>
+			<div class="preloader">
+				<iframe src="https://www.youtube-nocookie.com/embed/jU48bnGlQX4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br><hr><br>
+			</div>
 
 		<img src="../assets/images/warps.jpg" alt="Lieux disponible à la t&#233;l&#233;portation" class="horintalImage"><br>
 
@@ -283,7 +295,9 @@ function <span style="color: #AA6600">spells:</span>earth_spell<span style="colo
 		<br><h1>Griffes enflamm&#233;es :</h1><br>
 		<p>Ce sort permet au joueur de d&#233;ployer une griffe ac&#233;r&#233;e enflamm&#233;e devant lui qui endommage les ennemis et les brûle.</p>
 		<br>
-		<iframe src="https://www.youtube-nocookie.com/embed/y0Id3ZZZX_E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<div class="preloader">
+			<iframe src="https://www.youtube-nocookie.com/embed/y0Id3ZZZX_E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
 
 		<br><h2>fire_spell_lock.mcfunction</h2>
 <div style="background: #ffffff; overflow:auto; width:auto; color: #ffffff;background: #111827;padding:1%;border-radius: 0.5em;"><pre style="margin: 0; line-height: 125%">execute as <span style="color: #996633">@a</span>[nbt<span style="color: #666666">=</span>{<span style="color: #AA6600">SelectedItem:</span>{<span style="color: #AA6600">id:</span><span>&quot;Minecraft:carrot_on_a_stick&quot;</span>,<span style="color: #AA6600">Count:</span><span style="color: #FF0000">1</span>b,<span style="color: #AA6600">tag:</span>{<span style="color: #AA6600">display:</span>{<span style="color: #AA6600">Name:</span><span>&#39;[{&quot;text&quot;:&quot;Fire &quot;,&quot;color&quot;:&quot;gold&quot;,&quot;bold&quot;:true},{&quot;text&quot;:&quot;Staff&quot;,&quot;color&quot;:&quot;gray&quot;,&quot;bold&quot;:false}]&#39;</span>},<span style="color: #AA6600">HideFlags:</span><span style="color: #6600EE; font-weight: bold">4</span>,<span style="color: #AA6600">Unbreakable:</span><span style="color: #FF0000">1</span>b,<span style="color: #AA6600">CustomModelData:</span><span style="color: #6600EE; font-weight: bold">5</span>}}},scores<span style="color: #666666">=</span>{mana<span style="color: #666666">=</span><span style="color: #6600EE; font-weight: bold">2</span><span style="color: #666666">..</span>}] <span style="color: #008800; font-weight: bold">if</span> entity <span style="color: #996633">@s</span>[scores<span style="color: #666666">=</span>{firespell<span style="color: #666666">=</span><span style="color: #6600EE; font-weight: bold">1</span><span style="color: #666666">..</span>}] run function <span style="color: #AA6600">spells:</span>fire_spell<span style="color: #666666">/</span>fire_spell
@@ -335,7 +349,9 @@ execute as <span style="color: #996633">@s</span> at <span style="color: #996633
 		<br><br><h1>Effondrement sismique :</h1><br>
 		<p>Ce sort permet au joueur de faire un saut qui produit un tremblement de terre une fois qu'il atterrit. Cela a pour effet d'assommer les ennemis faibles et de ralentir les ennemis plus puissants.</p>
 		<br>
-		<iframe src="https://www.youtube-nocookie.com/embed/Bbjg0YvJ8EE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+		<div class="preloader">
+			<iframe src="https://www.youtube-nocookie.com/embed/Bbjg0YvJ8EE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+		</div>
 
 		<br><h2>earth_spell_lock.mcfunction</h2>
 <div style="background: #ffffff; overflow:auto; width:auto; color: #ffffff;background: #111827;padding:1%;border-radius: 0.5em;"><pre style="margin: 0; line-height: 125%">execute as <span style="color: #996633">@a</span>[nbt<span style="color: #666666">=</span>{<span style="color: #AA6600">SelectedItem:</span>{<span style="color: #AA6600">id:</span><span>&quot;Minecraft:carrot_on_a_stick&quot;</span>,<span style="color: #AA6600">Count:</span><span style="color: #FF0000">1</span>b,<span style="color: #AA6600">tag:</span>{<span style="color: #AA6600">display:</span>{<span style="color: #AA6600">Name:</span><span>&#39;[{&quot;text&quot;:&quot;Earth &quot;,&quot;color&quot;:&quot;dark_green&quot;,&quot;bold&quot;:true},{&quot;text&quot;:&quot;Staff&quot;,&quot;color&quot;:&quot;gray&quot;,&quot;bold&quot;:false}]&#39;</span>},<span style="color: #AA6600">HideFlags:</span><span style="color: #6600EE; font-weight: bold">4</span>,<span style="color: #AA6600">Unbreakable:</span><span style="color: #FF0000">1</span>b,<span style="color: #AA6600">CustomModelData:</span><span style="color: #6600EE; font-weight: bold">4</span>}}},scores<span style="color: #666666">=</span>{mana<span style="color: #666666">=</span><span style="color: #6600EE; font-weight: bold">3</span><span style="color: #666666">..</span>}] run function <span style="color: #AA6600">spells:</span>earth_spell<span style="color: #666666">/</span>earth_spell
@@ -396,7 +412,9 @@ execute at <span style="color: #996633">@s</span> run tp <span style="color: #99
 		<br><br><br><h1>Triple flèche :</h1><br>
 		<p>Permet au joueur de tirer 3 flèches en une fois. En pratique le joueur ne tire qu'une flèche, mais le système d&#233;tecte chaque tire et duplique la flèche en deux autres poss&#233;dant les mêmes caract&#233;ristiques.</p>
 		<br>
-		<iframe src="https://www.youtube-nocookie.com/embed/-TbVxydGInk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<div class="preloader">
+			<iframe src="https://www.youtube-nocookie.com/embed/-TbVxydGInk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
 
 		<br><h2>loop.mcfunction</h2>
 <div style="background: #ffffff; overflow:auto; width:auto; color: #ffffff;background: #111827;padding:1%;border-radius: 0.5em;"><pre style="margin: 0; line-height: 125%">execute <span style="color: #008800; font-weight: bold">if</span> entity <span style="color: #996633">@p</span>[nbt<span style="color: #666666">=</span>{<span style="color: #AA6600">SelectedItem:</span>{<span style="color: #AA6600">id:</span><span>&quot;Minecraft:bow&quot;</span>,<span style="color: #AA6600">Count:</span><span style="color: #FF0000">1</span>b,<span style="color: #AA6600">tag:</span>{<span style="color: #AA6600">display:</span>{<span style="color: #AA6600">Name:</span><span>&#39;{&quot;text&quot;:&quot;Long Bow&quot;}&#39;</span>}}}}] run function <span style="color: #AA6600">triple_arrow:</span>setup
@@ -431,7 +449,9 @@ execute at <span style="color: #996633">@p</span>[tag<span style="color: #666666
 			<br>En pratique la flèche est tir&#233;e avec une direction quelconque mais est tout de suite redirig&#233;e en calculant le d&#233;placement n&#233;cessaire entre sa position et la position de l'entit&#233; vis&#233;e.
 		</p>
 		<br>
-		<iframe src="https://www.youtube.com/embed/kT0u5q61RJM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+		<div class="preloader">
+			<iframe src="https://www.youtube.com/embed/kT0u5q61RJM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+		</div>
 
 		<br><h2>homing.mcfunction</h2>
 <div style="background: #ffffff; overflow:auto; width:auto; color: #ffffff;background: #111827;padding:1%;border-radius: 0.5em;"><pre style="margin: 0; line-height: 125%">tag <span style="color: #996633">@e</span>[type<span style="color: #666666">=</span><span style="color: #AA6600">Minecraft:</span>arrow,tag<span style="color: #666666">=</span>!homing,tag<span style="color: #666666">=</span>!final,sort<span style="color: #666666">=</span>nearest,limit<span style="color: #666666">=</span><span style="color: #6600EE; font-weight: bold">1</span>] add homing
