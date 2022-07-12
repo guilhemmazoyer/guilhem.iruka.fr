@@ -38,7 +38,7 @@
 
 .left {
     float: left;
-    width: 14%;/*100% divise par le nombre d'elements de menu*/
+    width: 12%;/*100% divise par le nombre d'elements de menu*/
 }
 
 .right {
@@ -58,6 +58,6 @@
 
 @media screen and (max-width: 1153px) {
     .left {
-        width: 18%;
+        width: 14%;
     }
 }
