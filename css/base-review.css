@@ -1,0 +1,65 @@
+
+/* General */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.center {
+    text-align: center;
+  }
+
+/* Background */
+
+body {
+    width: 100%;
+    height: auto;
+}
+
+
+/* Title */
+
+.content {
+    width: 70%;
+    margin-left: 15%;
+}
+
+#title {
+    width: 40%;
+    margin: 0 auto;
+    padding: 5vh 0 0 0;
+}
+
+
+/* About */
+
+.general_infos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2;
+    gap: 1rem 0;
+    padding: 0.75rem;
+
+    border-radius: 0.5em;
+}
+
+.general_infos span {
+    font-weight: bold;
+}
+
+.general_infos .bold {
+    font-weight: bold;
+}
+
+.divider{
+    width: 100%;
+    padding: 5vh 0 5vh 0;
+}
+
+
+/* Review */
+
+.review {
+    padding: 0.75rem;
+    border-radius: 0.5em;
+}
