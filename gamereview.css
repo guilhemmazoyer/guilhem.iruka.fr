@@ -6,6 +6,7 @@
 
 :root {
     --clr-neon: hsl(64, 99%, 67%);
+    --clr-off-neon: #080647;
 }
 
 *, *::before, *::after {
@@ -33,7 +34,7 @@ body {
     width: fit-content;
     font-size: 3em;
     background: radial-gradient(hsl(64, 100%, 75%), var(--clr-neon));
-    color: #080647;
+    color: var(--clr-off-neon);
     border: var(--clr-neon) 0.125em solid;
     border-radius: 0.25em;
     padding: 0.25em 0.75em;
@@ -48,11 +49,15 @@ body {
 /* Neon Button */
 
 .neon-button {
+    font-family: inherit;
+    width: fit-content;
+    height: fit-content;
     font-size: 1.25em;
     position: relative;
     text-decoration: none;
     cursor: pointer;
     color: var(--clr-neon);
+    text-shadow: 1px 0 0 var(--clr-off-neon), -1px 0 0 var(--clr-off-neon), 0 1px 0 var(--clr-off-neon), 0 -1px 0 var(--clr-off-neon), 1px 1px var(--clr-off-neon), -1px -1px 0 var(--clr-off-neon), 1px -1px 0 var(--clr-off-neon), -1px 1px 0 var(--clr-off-neon);
     border: var(--clr-neon) 0.125em solid;
     border-radius: 0.25em;
     padding: 0.25em 1em;
@@ -62,29 +67,97 @@ body {
 
 .neon-button:hover, .neon-button:focus {
     background: radial-gradient(hsl(64, 100%, 75%), var(--clr-neon));
-    color: #080647;
+    color: var(--clr-off-neon);
+    text-shadow: 0 0 0 var(--clr-neon);
     box-shadow: 0 0 2em 0.25em var(--clr-neon);
 }
 
 
 /* Grid Setup */
-.flex {
-    display: flex;
-    gap: 1rem;
-}
-
 .content {
     z-index: 2;
     display: grid;
     gap: 6rem 6rem;
     grid-template-columns: repeat(3, 1fr);
-    padding: 2rem 6rem 2rem 6rem;
+    padding: 1rem 4rem 1rem 4rem;
 }
 
-.test1 {
-    background: red;
+.game-card {
+    background: rgba(0, 0, 0, 0.5) no-repeat;
+    background-size: cover;
     aspect-ratio: 1 / 1;
+    font-family: salsa;
+    border-radius: 0.5em;
+
+    transition: transform 0.1s ease;
+    transform-style: preserve-3d;
+    will-change: transform;
 }
+
+.game-card:hover .game-card-content {
+    transform: translateZ(20px);
+}
+
+.game-card-content {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1;
+
+    font-family: inherit;
+    opacity: 0;
+    height: 100%;
+
+    position: relative;
+    z-index: 1;
+    transition: transform 0.15s ease;
+}
+
+.game-card-content .title {
+    font-family: inherit;
+    align-content: center;
+}
+
+.game-card-content h2 {
+    margin: auto 0;
+    font-family: inherit;
+    font-size: 2.5em;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 0 0 #000000, -2px 0 0 #000000, 0 2px 0 #000000, 0 -2px 0 #000000, 1px 1px #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000;
+}
+
+.game-card-content a {
+    margin: 0 auto;
+}
+
+/* Cards icon + hover */
+
+.TLOF-BOTW {
+    background-image: url("./assets/images/reviews/games-icon/TLOZ-BOTW.jpg");
+}
+
+.TLOF-BOTW:hover .game-card-content {
+    opacity: 1;
+}
+
+
+.SW-JFO {
+    background-image: url("./assets/images/reviews/games-icon/SW-JFO.jpg");
+}
+
+.SW-JFO:hover .game-card-content {
+    opacity: 1;
+}
+
+
+.P-LA {
+    background-image: url("./assets/images/reviews/games-icon/P-LA.jpg");
+}
+
+.P-LA:hover .game-card-content {
+    opacity: 1;
+}
+
 
 /* Utilities */
 
