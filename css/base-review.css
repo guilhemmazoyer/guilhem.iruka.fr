@@ -40,7 +40,7 @@ body {
     gap: 1rem 0;
     padding: 0.75rem;
 
-    border-radius: 0.5em;
+    border-radius: 0.5rem;
 }
 
 .general_infos span {
@@ -61,5 +61,11 @@ body {
 
 .review {
     padding: 0.75rem;
-    border-radius: 0.5em;
+    border-radius: 0.5rem;
+}
+
+
+.review *{
+    margin: 0.25rem 0 0 1rem;
+    color: white; 
 }
