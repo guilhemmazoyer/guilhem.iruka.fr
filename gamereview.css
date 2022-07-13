@@ -74,6 +74,7 @@ body {
 
 
 /* Grid Setup */
+
 .content {
     z-index: 2;
     display: grid;
@@ -130,6 +131,7 @@ body {
     margin: 0 auto;
 }
 
+
 /* Cards icon + hover */
 
 .TLOF-BOTW {
@@ -168,6 +170,7 @@ body {
 .bg-rotate {
     transform: rotate(90deg);
 }
+
 
 /* Responsive */
 
