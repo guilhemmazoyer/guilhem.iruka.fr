@@ -16,9 +16,6 @@ function TLOF_BOTW_handleHover(e) {
     const rotateX = -((THRESHOLD / 2 - horizontal * THRESHOLD).toFixed(2));
     const rotateY = (THRESHOLD / 2 - vertical * THRESHOLD).toFixed(2);
 
-    console.log(document.body.scrollTop)
-    console.log(clientY + " | " + clientHeight + " | " + offsetTop + " | " + vertical + " | " + rotateY);
-
     TLOF_BOTW.style.transform =
         `perspective(${clientWidth}px) rotateX(${rotateY}deg) rotateY(${rotateX}deg) scale(1.075) scale3d(1, 1, 1)`;
 }
