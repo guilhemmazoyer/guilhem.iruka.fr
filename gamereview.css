@@ -155,30 +155,20 @@ body {
 
 /* Cards icon + hover */
 
-.TLOF-BOTW {
-    background-image: url("./assets/images/reviews/games-icon/TLOZ-BOTW.jpg");
-}
-
-.TLOF-BOTW:hover .game-card-content {
+.game-card:hover .game-card-content {
     opacity: 1;
 }
 
+.TLOF-BOTW {
+    background-image: url("./assets/images/reviews/games-icon/TLOZ-BOTW.jpg");
+}
 
 .SW-JFO {
     background-image: url("./assets/images/reviews/games-icon/SW-JFO.jpg");
 }
 
-.SW-JFO:hover .game-card-content {
-    opacity: 1;
-}
-
-
 .P-LA {
     background-image: url("./assets/images/reviews/games-icon/P-LA.jpg");
-}
-
-.P-LA:hover .game-card-content {
-    opacity: 1;
 }
 
 
