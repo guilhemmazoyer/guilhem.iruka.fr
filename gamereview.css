@@ -99,9 +99,9 @@ body {
 .content {
     z-index: 2;
     display: grid;
-    gap: 6rem 6rem;
+    gap: 4rem 6rem;
     grid-template-columns: repeat(3, 1fr);
-    padding: 1rem 4rem 1rem 4rem;
+    padding: 0 4rem 1rem 4rem;
 }
 
 .game-card {
@@ -123,7 +123,6 @@ body {
 .game-card-content {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: 1;
 
     font-family: inherit;
     opacity: 0;
