@@ -10,18 +10,3 @@
 body {
     background: url(../assets/images/reviews/tloz-botw/wallpaper.jpg) ;
 }
-
-
-/* About */
-
-.general_infos {
-    background: #635536;
-    color: white;
-}
-
-
-/* Review */
-
-.review {
-    background: #635536;
-}

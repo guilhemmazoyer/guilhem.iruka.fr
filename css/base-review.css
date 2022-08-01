@@ -1,3 +1,4 @@
+@font-face {font-family: "ars-maquette-pro"; src: url("./assets/fonts/ARSMaquettePro-Medium.ttf") format("truetype"); font-weight: 500; font-style: normal;}
 
 /* General */
 
@@ -20,8 +21,9 @@ body {
 /* Title */
 
 .content {
-    width: 70%;
-    margin-left: 15%;
+    width: 80%;
+    margin-left: 10%;
+    font-size: 150%;
 }
 
 #title {
@@ -39,12 +41,6 @@ body {
     grid-template-rows: 2;
     gap: 1rem 0;
     padding: 0.75rem;
-
-    border-radius: 0.5rem;
-}
-
-.general_infos span {
-    font-weight: bold;
 }
 
 .general_infos .bold {
@@ -60,12 +56,14 @@ body {
 /* Review */
 
 .review {
-    padding: 0.75rem;
-    border-radius: 0.5rem;
+    padding: 0.75rem 0.75rem 0.75rem 1.75rem;
 }
 
-
-.review *{
-    margin: 0.25rem 0 0 1rem;
-    color: white; 
+.general_infos, .review {
+    font-family: "ars-maquette-pro";
+    background: #DFD9CB;
+    color: black;
+    box-shadow: 0 0 0.5em 0 #DFD9CB;
+    border-radius: 0.5rem;
+    line-height: 125%;
 }
