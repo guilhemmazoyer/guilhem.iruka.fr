@@ -67,3 +67,20 @@ body {
     border-radius: 0.5rem;
     line-height: 125%;
 }
+
+h2 {
+    padding-bottom: 1vh;
+}
+
+h2::after {
+    content: '';
+    background: #170708;
+    display: block;
+    width: 6.5vw;
+    height: 0.25vh;
+    transform: translateX(10px) translateY(0.5vh);
+}
+
+.alinea {
+    margin-left: 1.5vw;
+}
