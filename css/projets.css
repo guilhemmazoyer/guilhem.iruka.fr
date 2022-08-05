@@ -1,6 +1,6 @@
 /* Fonts */
-@font-face {font-family: "salsa"; src: url("./assets/fonts/Salsa-Regular.ttf") format("truetype");}
-@font-face {font-family: "wallpainter"; src: url("./assets/fonts/Wall-Painter.ttf") format("truetype");}
+@font-face {font-family: "salsa"; src: url("../assets/fonts/Salsa-Regular.ttf") format("truetype");}
+@font-face {font-family: "wallpainter"; src: url("../assets/fonts/Wall-Painter.ttf") format("truetype");}
 
 /* General */
 
@@ -126,6 +126,7 @@ body {
     font-size: 2.5em;
     transform: translateY(-3px);
     width: 100%;
+    margin: 0 1vw 0 1.25vw;
 }
 
 .lang-icon {
@@ -162,6 +163,10 @@ body {
 
 .bg-2 {
     background: hsl(26, 100%, 41%);
+}
+
+.right {
+    float: right;
 }
 
 
