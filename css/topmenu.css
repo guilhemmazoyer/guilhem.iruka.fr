@@ -38,7 +38,7 @@
 
 .left {
     float: left;
-    width: 12%;/*100% divise par le nombre d'elements de menu*/
+    width: 15%;/*100% divise par le nombre d'elements de menu*/
 }
 
 .right {
