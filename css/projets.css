@@ -126,7 +126,11 @@ body {
     font-size: 2.75em;
     transform: translateY(-3px);
     width: 100%;
-    margin: 0 1vw 0 1.25vw;
+    margin: 0 0.75vw 0 1.25vw;
+}
+
+.card-title .card-soft-icons{
+    transform: translateY(2px);
 }
 
 .lang-icon {
