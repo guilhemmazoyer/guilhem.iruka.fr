@@ -12,3 +12,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.content-img {
+    max-width: 50vw;
+    max-height: auto;
+}
