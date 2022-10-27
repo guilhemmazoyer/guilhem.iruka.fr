@@ -144,7 +144,7 @@ body {
     font-size: 1.5em;
 }
 
-.card-description a{
+.card-description .neon-button {
     position: absolute;
     right: 1vw;
     bottom: 1vw;
