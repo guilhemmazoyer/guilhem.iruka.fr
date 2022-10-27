@@ -169,11 +169,11 @@ body {
     transform: rotate(90deg);
 }
 
-.bg:nth-child(odd) {
+.bg:nth-child(even) {
     background: hsl(26, 100%, 49%);
 }
 
-.bg:nth-child(even) {
+.bg:nth-child(odd) {
     background: hsl(26, 100%, 41%);
 }
 
