@@ -71,4 +71,20 @@ body {
     .content {
         grid-template-columns: 1fr;
     }
+
+    .bg-1:nth-child(even) {
+        background: hsl(26, 100%, 49%);
+    }
+    
+    .bg-1:nth-child(odd) {
+        background: hsl(26, 100%, 41%);
+    }
+
+    .bg-2:nth-child(even) {
+        background: hsl(26, 100%, 49%);
+    }
+    
+    .bg-2:nth-child(odd) {
+        background: hsl(26, 100%, 41%);
+    }
 }
