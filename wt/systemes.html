@@ -111,15 +111,15 @@ tp <span style="color: #996633">@a</span>[tag<span style="color: #666666">=</spa
 		<br><h1>Langage :</h1><br>
 
 		<p>J'ai fait le choix de rendre le projet Wyrd's Tales jouable pour les francophones et anglophones. Je souhaite &#233;galement faire le doublage de tous les dialogues en français et en anglais.
-			<br>Avant de commencer à jouer, dans la salle de paramètrage, le joueur à accès à diff&#233;rents paramètres dont le choix de la langue &#233;crite et parl&#233;. Il pourra aussi choisir s'il souhaite avoir le sous-titrage ou non.
-			<br>Ces options peuvent être modifi&#233;e à tout instant par le joueur, mais n&#233;cessite pour certaines de relancer la sauvegarde pour être mis à jour du aux quelques limitations de Minecraft.
+			<br>Avant de commencer à jouer, dans la salle de param&#233;trage, le joueur a accès à diff&#233;rents paramètres dont le choix de la langue &#233;crite et parl&#233;. Il pourra aussi choisir s'il souhaite avoir le sous-titrage ou non.
+			<br>Ces options peuvent être modifi&#233;es à tout instant par le joueur, mais n&#233;cessitent pour certaines de relancer la sauvegarde pour être mis à jour dû aux quelques limitations de Minecraft.
 		</p><br>
 		<img src="../assets/images/language.jpg" alt="Livre explicant les r&#233;glages du langage" class="verticalImage">
 
 		<br><br><h1>Difficult&#233; :</h1><br>
 
-		<p>J'ai la volont&#233; que mon projet, Wyrd's Tales, puisse être jou&#233; par le plus grand nombre en abaissant le maximum de barrières possibles.
-			<br>Le niveau de difficult&#233; en est une. En laissant le choix aux joueurs de choisir la difficult&#233; avec laquelle ils souhaitent jouer et en leur laissant la possibilit&#233; de la changer à tout moment, je permet à chacun de vivre l'exp&#233;rience qu'il recherche à travers mon univers.
+		<p>J'ai la volont&#233; que mon projet, Wyrd's Tales, puisse être jou&#233; par le plus grand nombre en abaissant le maximum de barrières possible.
+			<br>Le niveau de difficult&#233; en est une. En laissant le choix aux joueurs de choisir la difficult&#233; avec laquelle ils souhaitent jouer et en leur laissant la possibilit&#233; de la changer à tout moment, je permets à chacun de vivre l'exp&#233;rience qu'il recherche à travers mon univers.
 			<br>Pour cela, à l'instar du langage, un tag est donn&#233; au joueur. Celui-ci sera v&#233;rifi&#233; avant chaque apparition d'entit&#233;s hostiles pour ajuster leur force, point de vie, vitesse, sortilèges, etc... Il n'est donc pas n&#233;cessaire de relancer la sauvegarde pour prendre effet.
 		</p><br>
 		<img src="../assets/images/difficulty.jpg" alt="Livre explicant les r&#233;glages de la difficult&#233;" class="verticalImage">
@@ -128,7 +128,7 @@ tp <span style="color: #996633">@a</span>[tag<span style="color: #666666">=</spa
 		<br><br><h1>Aide à la vis&#233;e :</h1><br>
 
 		<p>Toujours dans la veine de l'accessibilit&#233;, l'aide à la vis&#233;e permet aux joueurs ne souhaitant pas avoir à viser parfaitement en permanence, de profiter de toutes les facettes du jeu.
-			<br>Cette fonctionnalit&#233; est encore en prototypage car assez complexe à mettre en place. Il faut faire des choix quant à l'entit&#233; viser. Faut-il viser la plus proche ? Celle la plus en face du joueur ? Celle la plus faible ou plus forte ? Celle possedant le moins de point de vie ?
+			<br>Cette fonctionnalit&#233; est encore en prototypage car assez complexe à mettre en place. Il faut faire des choix quant à l'entit&#233; viser. Faut-il viser la plus proche ? La plus en face du joueur ? La plus faible ou plus forte ? Celle poss&#233;dant le moins de point de vie ?
 			<br>La force de l'aide peut être ajust&#233;e entre light, medium et hard.
 			<br><br>En voilà une preview de l'assistance medium puis hard :<br></p>
 			<div class="preloader">
@@ -161,7 +161,7 @@ execute anchored eyes facing entity <span style="color: #996633">@e</span>[type<
 		<br><h1>Cin&#233;matiques :</h1><br>
 
 		<p>Ce que nous appelons cin&#233;matiques, sont tous les d&#233;placements automatiques mis en scène durant l'aventure, laissant le joueur spectateur de l'action.
-			<br>Ici nous nous int&#233;ressons principalement aux d&#233;placements. Ils sont mis en marche par de nombreuses petites t&#233;l&#233;portations du joueurs vers sa destination. Dans Minecraft le temps est d&#233;coup&#233; en ticks. 1 tick vaut 1/20 seconde. Si nous voulons qu'un joueur aille du point a au point B en 8 secondes il faudra d&#233;couper son d&#233;placement en 160 fractions de d&#233;placement (1 par tick).
+			<br>Ici nous nous int&#233;ressons principalement aux d&#233;placements. Ils sont mis en marche par de nombreuses petites t&#233;l&#233;portations du joueur vers sa destination. Dans Minecraft le temps est d&#233;coup&#233; en ticks. 1 tick vaut 1/20 seconde. Si nous voulons qu'un joueur aille du point A au point B en 8 secondes il faudra d&#233;couper son d&#233;placement en 160 fractions de d&#233;placement (1 par tick).
 			<br>Cela donne en pratique de jolis rendus pour mettre en scène les personnages non joueurs, montrer des &#233;vènements (porte qui s'ouvre) et pour pr&#233;senter des lieux.
 		<br><br>En voilà deux exemples :<br></p>
 		<div class="preloader">
@@ -210,8 +210,8 @@ scoreboard players reset <span style="color: #996633">@s</span> cinematic<span s
 	<div class="sysTexts" id="Dialogues">
 		<br><h1>Dialogues :</h1><br>
 
-		<p>Permettre au joueur de discuter avec les personnages non joueur du jeu est essentiel pour l'interraction et l'immersion.
-			<br>Pour cela, le jeu v&#233;rifie très r&#233;gulièrement si le joueur a int&#233;ragi avec un NPC. Si c'est le cas, le NPC vis&#233; d&#233;clenche alors son interraction. Ca peut n'être qu'une phrase, mais ça peut aussi ouvrir une boutique ou lancer une cin&#233;matique.
+		<p>Permettre au joueur de discuter avec les personnages non joueurs du jeu est essentiel pour l'interaction et l'immersion.
+			<br>Pour cela, le jeu v&#233;rifie très r&#233;gulièrement si le joueur a interagi avec un NPC. Si c'est le cas, le NPC vis&#233; d&#233;clenche alors son interaction. Ça peut n'être qu'une phrase, mais ça peut aussi ouvrir une boutique ou lancer une cin&#233;matique.
 		<br><br>Exemple d'un dialogue basique dans les rues de Glanom :<br></p>
 		<div class="preloader">
 			<iframe src="https://www.youtube-nocookie.com/embed/m7RT_gPfosQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -243,8 +243,8 @@ scoreboard players reset <span style="color: #996633">@a</span>[scores<span styl
 	<div class="sysTexts" id="Balises">
 		<br><h1>T&#233;l&#233;portations :</h1><br>
 
-		<p>Les t&#233;l&#233;portations ne sont accessibles aux joueurs que via certains points pr&#233;cis dans la zone de magie et le capitaine Cord. Ce dernier propose de naviguer vers une des destinations qu'il connait. Bien que pour le joueur la t&#233;l&#233;portation est camoufl&#233;e derrière une travers&#233;e en bateau elle a bien lieu.
-			<br>Cependant les t&#233;l&#233;portations ont une autre utilit&#233;e, pour les concepteurs cette fois. Des lieux ont &#233;t&#233; enregistr&#233;s, et nous (les personnes ayant travaill&#233; sur le projet) pouvons nous y t&#233;l&#233;porter à notre guise.
+		<p>Les t&#233;l&#233;portations ne sont accessibles aux joueurs que via certains points pr&#233;cis dans la zone de magie et le capitaine Cord. Ce dernier propose de naviguer vers une des destinations qu'il connaît. Bien que pour le joueur la t&#233;l&#233;portation est camoufl&#233;e derrière une travers&#233;e en bateau elle a bien lieu.
+			<br>Cependant les t&#233;l&#233;portations ont une autre utilit&#233;, pour les concepteurs cette fois. Des lieux ont &#233;t&#233; enregistr&#233;s, et nous (les personnes ayant travaill&#233; sur le projet) pouvons nous y t&#233;l&#233;porter à notre guise.
 			<br><br>Exemple pour la t&#233;l&#233;portation vers la zone Air :</p>
 
 			<div class="preloader">
@@ -412,7 +412,7 @@ execute at <span style="color: #996633">@s</span> run tp <span style="color: #99
 		<p>Afin que tous les joueurs puissent profiter pleinement de l'exp&#233;rience, nous avons mis en place des paramètres d'accessibilit&#233;s.</p>
 		
 		<br><br><br><h1>Triple flèche :</h1><br>
-		<p>Permet au joueur de tirer 3 flèches en une fois. En pratique le joueur ne tire qu'une flèche, mais le système d&#233;tecte chaque tire et duplique la flèche en deux autres poss&#233;dant les mêmes caract&#233;ristiques.</p>
+		<p>Permet au joueur de tirer 3 flèches en une fois. En pratique le joueur ne tire qu'une flèche, mais le système d&#233;tecte chaque tir et duplique la flèche en deux autres poss&#233;dant les mêmes caract&#233;ristiques.</p>
 		<br>
 		<div class="preloader">
 			<iframe src="https://www.youtube-nocookie.com/embed/-TbVxydGInk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -447,7 +447,7 @@ execute at <span style="color: #996633">@p</span>[tag<span style="color: #666666
 </pre></div>
 
 		<br><br><br><h1>Flèches t&#233;l&#233;guid&#233;es :</h1><br>
-		<p>Permet au joueur de tirer des flèches t&#233;l&#233;guid&#233;es vers l'entit&#233; la plus proche. Ce système est encore un prototype. Il fait face aux même problèmes que l'aide à la vis&#233;e quand aux choix des entit&#233;s à viser en priorit&#233;.
+		<p>Permet au joueur de tirer des flèches t&#233;l&#233;guid&#233;es vers l'entit&#233; la plus proche. Ce système est encore un prototype. Il fait face aux même problèmes que l'aide à la vis&#233;e quant au choix des entit&#233;s à viser en priorit&#233;.
 			<br>En pratique la flèche est tir&#233;e avec une direction quelconque mais est tout de suite redirig&#233;e en calculant le d&#233;placement n&#233;cessaire entre sa position et la position de l'entit&#233; vis&#233;e.
 		</p>
 		<br>
