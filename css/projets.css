@@ -6,6 +6,7 @@
 
 :root {
     --clr-neon: hsl(64, 99%, 67%);
+    --clr-off-neon: hsl(242, 84%, 15%);
 }
 
 *, *::before, *::after {
@@ -33,13 +34,14 @@ body {
     width: fit-content;
     font-size: 3em;
     background: radial-gradient(hsl(64, 100%, 75%), var(--clr-neon));
-    color: #080647;
+    color: var(--clr-off-neon);
     border: var(--clr-neon) 0.125em solid;
     border-radius: 0.25em;
     padding: 0.25em 0.75em;
 }
 
 #title {
+    font-size: 2em;
     font-family: wallpainter;
     transform: translateY(-10px);
 }
@@ -48,6 +50,9 @@ body {
 /* Neon Button */
 
 .neon-button {
+    font-family: inherit;
+    width: fit-content;
+    height: fit-content;
     font-size: 1.25em;
     position: relative;
     text-decoration: none;
@@ -62,7 +67,7 @@ body {
 
 .neon-button:hover, .neon-button:focus {
     background: radial-gradient(hsl(64, 100%, 75%), var(--clr-neon));
-    color: #080647;
+    color: var(--clr-off-neon);
     box-shadow: 0 0 2em 0.25em var(--clr-neon);
 }
 
@@ -150,8 +155,17 @@ body {
     bottom: 1vw;
 }
 
+.divider {
+    width: 80%;
+    padding: 5vh 0 0 0;
+}
+
 
 /* Utilities */
+
+.center {
+    text-align: center;
+}
 
 .bold {
     font-weight: bold;
