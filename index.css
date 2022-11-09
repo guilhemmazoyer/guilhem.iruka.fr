@@ -6,7 +6,7 @@ body {
     height: 100%;
 }
 
-.firstpage{
+.homepage{
     background-image: url("./assets/images/home_background.jpg");
     background-position: center center;
     background-repeat: no-repeat;
@@ -17,20 +17,20 @@ body {
     height: 90%;
 }
 
-#title{
+#homepage-title{
     position: relative;
     width: fit-content;
     margin: 0 auto;
     top: 15vh;
 }
 
-#title h1{
+#homepage-title h1{
     font-family: "likesnow", sans-serif;
     color: #E5A800;
     font-size: 650%;
 }
 
-#title h3{
+#homepage-title h3{
     color: white;
     font-size: 200%;
 }

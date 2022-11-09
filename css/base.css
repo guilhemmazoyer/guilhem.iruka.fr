@@ -1,11 +1,30 @@
 @charset "UTF-8";
 
+@font-face {font-family: "likesnow"; src: url("../assets/fonts/likesnow.ttf") format("truetype");}
+@font-face {font-family: "salsa"; src: url("../assets/fonts/Salsa-Regular.ttf") format("truetype");}
+@font-face {font-family: "wallpainter"; src: url("../assets/fonts/Wall-Painter.ttf") format("truetype");}
+
+:root {
+    --clr-neon: hsl(64, 99%, 67%);
+    --clr-off-neon: hsl(242, 84%, 15%);
+}
+
 *{
     margin: 0;
     padding: 0;
     font-family: sans-serif;
 }
 
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth;
+}
+
+body {
+    background: radial-gradient(#111368, #0B0438);
+    width: 100%;
+    height: auto;
 }

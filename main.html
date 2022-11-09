@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="fr" lang="fr">
 
 <head>
@@ -18,122 +19,151 @@
 
 	<link rel="stylesheet" type="text/css" href="./css/base.css" />
 	<link rel="stylesheet" type="text/css" href="./css/topmenu.css" />
-	<link rel="stylesheet" type="text/css" href="./css/fadein.css" />
-	<link rel="stylesheet" type="text/css" href="./css/projets.css" />
-	<link rel="stylesheet" type="text/css" href="./main.css" />
+	<link rel="stylesheet" type="text/css" href="./css/neon-elements.css" />
+	<link rel="stylesheet" type="text/css" href="./css/main.css" />
     
     <script type="module" src="./jslib/fadein.js"></script>
+    <script type="module" src="./jslib/resizeorscroll.js"></script>
     
 	<script src="./jslib/topmenu.js "></script>
 </head>
 
 <body>
-        <div class="content">
-            <img width="1280" height="720" loading="lazy" class="card-icon fade-in" src="./assets/images/gamecards/spaceinvaders.jpg">
-            <section class="items-prog-card bg grid-col-span-3 fade-in">
-                <div class="card-description grid-col-span-5">
-                    <div class="card-title flex">
-                        <div>
-                            <h2>Space Invaders</h2>
-                        </div>
-                        <div>
-                            <img width="200" height="200" loading="lazy" class="lang-icon" src="./assets/images/icons/qt_icon.png" title="Qt">
-                            <img width="200" height="200" loading="lazy" class="lang-icon" src="./assets/images/icons/cpp_icon.png" title="C++">
-                            <img width="200" height="200" loading="lazy" class="lang-icon" src="./assets/images/icons/github_icon.png" title="GitHub">
-                        </div>
-                    </div>
-                    <p>
-                    Reproduction du célèbre jeu "Space Invaders" développé sous Qt C++.<br>
-                    Un niveau de difficulté réglable est intégré au jeu pour configurer la vitesse d'apparition des aliens ainsi que le score à atteindre pour remporter la partie.<br>
-                    Un Sound design sommaire enrichit l'expérience de jeu, il met en valeur les aspects importants du jeu.
-                    </p>
-                    <a class="neon-button" href="https://github.com/guilhemmazoyer/Qt_space_invader" target="_blank">En savoir plus</a>
-                </div>
-            </section>
-    
-            <section class="items-prog-card bg grid-col-span-3 fade-in">
-                <div class="card-description grid-col-span-5">
-                    <div class="card-title flex">
-                        <div class="title-container">
-                            <h2>Parseur d'articles scientifiques</h2>
-                        </div>
-                        <div>
-                            <img width="200" height="200" loading="lazy" class="lang-icon" src="./assets/images/icons/py_icon.png" title="Python">
-                            <img width="200" height="200" loading="lazy" class="lang-icon" src="./assets/images/icons/vscode_icon.png" title="VS Code">
-                            <img width="200" height="200" loading="lazy" class="lang-icon" src="./assets/images/icons/github_icon.png" title="GitHub">
-                        </div>
-                    </div>
-                    <p>
-                    Programme Python réalisé à l'UBS de Vannes pour aider les chercheurs de l'IRISA.<br>
-                    Ce programme fait le découpage d'articles scientifiques selon des catégories connues. Nous nous attardons sur la récupération du nom du fichier, du titre du document, de ses auteurs et leurs affiliations, des parties du texte et des références.<br>
-                    Toutes ces parties sont récupérées et rédigées dans un fichier Txt ou XML formaté.
-                    Le choix des fichiers PDF à traiter se fait à partir d'un menu textuel.
-                    </p>
-                    <a class="neon-button" href="https://github.com/guilhemmazoyer/Parseur_lbgl" target="_blank">En savoir plus</a>
-                </div>
-            </section>
-            <img width="1120" height="630" loading="lazy" class="card-icon fade-in" src="./assets/images/gamecards/parseur.jpg">
-    
-            <img width="1109" height="624" loading="lazy" class="card-icon fade-in" src="./assets/images/gamecards/javagotchi.jpg">
-            <section class="items-prog-card bg grid-col-span-3 fade-in">
-                <div class="card-description grid-col-span-5">
-                    <div class="card-title flex">
-                        <div>
-                            <h2>Javagotchi</h2>
-                        </div>
-                        <div class="card-soft-icons">
-                            <img width="200" height="200" loading="lazy" class="lang-icon" src="./assets/images/icons/java_full_icon.jpg" title="Java">
-                            <img width="200" height="200" loading="lazy" class="lang-icon" src="./assets/images/icons/eclipse_icon.png" title="Eclipse">
-                            <img width="200" height="200" loading="lazy" class="lang-icon" src="./assets/images/icons/github_icon.png" title="GitHub">
-                        </div>
-                    </div>
-                    <p>
-                    Javagotchi est un projet de jeu réalisé sous Java. Ce projet a été fait dans le cadre de l'enseignement de Java Swing.<br>
-                    Le joueur peut choisir d'élever 4 types de familiers. Un chien, un chat, un lapin et un robot.<br>
-                    Le joueur doit, pour maintenir son familier en vie, jouer au Javagotchi et s'occuper de son familier.<br>
-                    Pour cela il doit nourrir son familier, le faire jouer, le laver et le faire dormir.<br>
-                    Si le familier est abandonné ou s'il ne reçoit pas l'attention dont il a besoin, il meurt.
-                    </p>
-                    <a class="neon-button" href="https://github.com/guilhemmazoyer/Javagotchi" target="_blank">En savoir plus</a>
-                </div>
-            </section>
-            
-            <section class="items-prog-card bg grid-col-span-3 fade-in">
-                <div class="card-description grid-col-span-5">
-                    <div class="card-title flex">
-                        <div>
-                            <h2>Labyrinthe</h2>
-                        </div>
-                        <div>
-                            <img width="200" height="200" loading="lazy" class="lang-icon" src="./assets/images/icons/html_icon.png" title="HTML">
-                            <img width="200" height="200" loading="lazy" class="lang-icon" src="./assets/images/icons/css_icon.png" title="CSS">
-                            <img width="200" height="200" loading="lazy" class="lang-icon" src="./assets/images/icons/js_icon.png" title="JavaScript">
-                            <img width="200" height="200" loading="lazy" class="lang-icon" src="./assets/images/icons/vscode_icon.png" title="VS Code">
-                        </div>
-                    </div>
-                    <p>
-                    Jeu de navigateur réalisé en JavaScript.<br>
-                    Ce petit jeu propose de parcourir un labyrinthe à la souris où le contact avec un mur est rédhibitoire.
-                    </p>
-                    <a class="neon-button" href="./labyrinthe/index.html" target="_blank">En savoir plus</a>
-                </div>
-            </section>
-            <img width="250" height="250" loading="lazy" class="card-icon fade-in" src="./assets/images/gamecards/tp6_pre.jpg">
+    <div class="homepage">
+        <div id="homepage-title">
+            <h1>Guilhem</h1>
+            <h3><em>Game Designer - D&#233;veloppeur - Musicien</em></h3>
         </div>
-    </section>
 
-    <section class="encadres">
+        <div class="whoami" onclick="toBottom()">
+                <h2>Envie d'en savoir plus ?</h2>
+        </div>
+        <script>function toBottom() {
+            window.scroll({
+                top: window.innerHeight,
+                behavior: "smooth"
+            });
+        }</script>
+    </div>
+
+    <section class="personnals">
         <div class="neon-title">
             <div class="other-neon-title">
-                <h1 id="title">projets encadrés</h1>
+                <h1 id="title">projets personnels</h1>
             </div>
         </div>
 
-        <div class="grid-encadres">
-            <article class="project-card SI-QT">
+        <div class="grid-projects">
+            <article class="project-card MC-WT">
                 <div class="project-card-content">
-                    <h2>Space Invader</h2>
-                    <a class="neon-button" href="./reviews/test.html">Lire la review</a>
+                    <h2 class="center">Wyrd's Tales</h2>
+                    <p class="grid-row-span-2">
+                    RPG solo dans l'univers de Minecraft, Wyrd's Tales nous plonge dans la peau d'un soldat royal du pays de Tures, Wyrd.<br>
+                    Il est confronté aux sombres agissements d'un sorcier et part en quête pour protéger son royaume et sauver sa reine.<br>
+                    Durant son voyage Wyrd aura l'occasion de visiter plusieurs villes ainsi que de faire la connaissance de nombreux personnages.
+                    </p>
+                    <div class="softwares">
+                        <img width="200" height="200" loading="lazy" class="lang-icon" src="./assets/images/systemes_wt.jpg" title="Minecraft Command Systeme">
+                        <img width="200" height="200" loading="lazy" class="lang-icon" src="./assets/images/icons/vscode_icon.png" title="VS Code">
+                        <img width="200" height="200" loading="lazy" class="lang-icon" src="./assets/images/icons/gdocs_icon.png" title="Google Documents">
+                        <img width="200" height="200" loading="lazy" class="lang-icon" src="./assets/images/icons/discord_icon.png" title="Discord">
+                    </div>
+                    <a class="neon-button" href="./wt/index.html">En savoir plus</a>
+                </div>
+            </article>
+
+            <article class="project-card UE-TileBase">
+                <div class="project-card-content">
+                    <h2 class="center">Tilebased Game<br>Prototype</h2>
+                    <p class="grid-row-span-2">
+                    Le joueur doit déplacer une boule dans l'espace de jeu pour récupérer des pièces. La boule ne peut se
+                    déplacer qu'horizontalement ou verticalement et jusqu'à heurter un obstacle. Le joueur peut aussi
+                    interchanger la position de la boule avec celle du cube bleu, cette mécanique permet d'ouvrir énormément
+                    de possibilité au niveau du level design.<br>
+                    Le concept est issu d'un jeu développé pour calculatrice TI-82, DStar.
+                    </p>
+                    <div class="softwares">
+                        <img width="200" height="200" loading="lazy" class="lang-icon" src="./assets/images/icons/unrealengine_icon.png" title="Unreal Engine 5">
+                        <img width="200" height="200" loading="lazy" class="lang-icon" src="./assets/images/icons/blender_icon.png" title="Blender">
+                    </div>
+                    <a class="neon-button" href="./reviews/TilebasedGame.html">En savoir plus</a>
+                </div>
+            </article>
+
+            <article class="project-card UE-SideScroller">
+                <div class="project-card-content">
+                    <h2 class="center">SideScroller 2D<br>Prototype</h2>
+                    <p class="grid-row-span-2">Prototype de platformer 2D pour me familiariser avec le genre et la création
+                    de jeu en 2D sous Unreal Engine. Le jeu m'a aussi permis de réaliser un menu de réglage.
+                    </p>
+                    <div class="softwares">
+                        <img width="200" height="200" loading="lazy" class="lang-icon" src="./assets/images/icons/unrealengine_icon.png" title="Unreal Engine 5">
+                    </div>
+                    <a class="neon-button" href="./reviews/SideScroller2D.html">En savoir plus</a>
+                </div>
+            </article>
+
+            <article class="project-card PY-Renderer">
+                <div class="project-card-content">
+                    <h2 class="center">3D Cube Renderer</h2>
+                    <p class="grid-row-span-2">
+                    Outil de rendu d'un cube développé avec Python, pygame et pygameWidget<br>
+                    L'idée vient d'un jeune youtubeur anglophone : <a href="https://youtu.be/hFRlnNci3Rs" target="_blank">lien</a>.
+                    J'ai souhaité réaliser la même chose. J'ai ensuite poussé le projet plus loin en faisant l'affichage des faces du cube. 
+                    J'ai, dans la mesure du possible, utilisé mes propres méthodes, pour comprendre le fonctionnement de chaque étape sans me reposer sur des systèmes que je ne comprends pas.
+                    </p>
+                    <div class="softwares">
+                        <img width="200" height="200" loading="lazy" class="lang-icon" src="./assets/images/icons/py_icon.png" title="Python">
+                        <img width="200" height="200" loading="lazy" class="lang-icon" src="./assets/images/icons/vscode_icon.png" title="VS Code">
+                        <img width="200" height="200" loading="lazy" class="lang-icon" src="./assets/images/icons/github_icon.png" title="GitHub">
+                    </div>
+                    <a class="neon-button" href="https://github.com/guilhemmazoyer/Py3DShapeRenderer" target="_blank">En savoir plus</a>
+                </div>
+            </article>
+
+            <article class="project-card Portfolio">
+                <div class="project-card-content">
+                    <h2 class="center">Site portfolio</h2>
+                    <p class="grid-row-span-2">
+                    Ce site, sur lequel vous naviguez, entièrement réalisé par mes soins.
+                    </p>
+                    <div class="softwares">
+                        <img width="200" height="200" loading="lazy" class="lang-icon" src="./assets/images/icons/html_icon.png" title="HTML">
+                        <img width="200" height="200" loading="lazy" class="lang-icon" src="./assets/images/icons/css_icon.png" title="CSS">
+                        <img width="200" height="200" loading="lazy" class="lang-icon" src="./assets/images/icons/js_icon.png" title="JavaScript">
+                        <img width="200" height="200" loading="lazy" class="lang-icon" src="./assets/images/icons/vscode_icon.png" title="VS Code">
+                        <img width="200" height="200" loading="lazy" class="lang-icon" src="./assets/images/icons/github_icon.png" title="GitHub">
+                    </div>
+                    <a class="neon-button" href="https://github.com/guilhemmazoyer/guilhem.iruka.fr" target="_blank">En savoir plus</a>
+                </div>
+            </article>
+
+            <article class="project-card MODELS">
+                <div class="project-card-content">
+                    <h2 class="center">Modèles 3D</h2>
+                    <p class="grid-row-span-2">
+                    Modèles 3D réalisés sous Blender, toutes les textures ont également été réalisée avec l'outil <span class="italic">shading</span> du logiciel.
+                    </p>
+                    <div class="softwares">
+                        <img width="200" height="200" loading="lazy" class="lang-icon" src="./assets/images/icons/blender_icon.png" title="Blender">
+                    </div>
+                    <a class="neon-button" href="https://www.artstation.com/guilhemmazoyer" target="_blank">En savoir plus</a>
+                </div>
+            </article>
+
+            <article class="project-card PY-Tree">
+                <div class="project-card-content">
+                    <h2 class="center">Générateur d'arborescence<br>de dossier</h2>
+                    <p class="grid-row-span-2">
+                    Générateur d'arborescence de dossier, il permet de rapidement avoir une vue précise du rangement d'un dossier.<br>
+                    Format de sortie en texte pouvant être simplement copié vers un autre support.<br>
+                    La récupération par le programme peut être modulée pour limiter la récupération de certaines informations.
+                    </p>        
+                    <div class="softwares">
+                        <img width="200" height="200" loading="lazy" class="lang-icon" src="./assets/images/icons/py_icon.png" title="Python">
+                        <img width="200" height="200" loading="lazy" class="lang-icon" src="./assets/images/icons/vscode_icon.png" title="VS Code">
+                    </div>
+                    <a class="neon-button" href="https://github.com/guilhemmazoyer/Py3DShapeRenderer" target="_blank">En savoir plus</a>
                 </div>
             </article>
         </div>
@@ -143,6 +173,94 @@
     <div class="center">
         <img class="divider" src="./assets/images/reviews/SideScroller2D/divider-content.png" alt="Séparateur">
     </div>
+
+    
+    <section class="encadres">
+        <div class="neon-title">
+            <div class="other-neon-title">
+                <h1 id="title">projets encadrés</h1>
+            </div>
+        </div>
+
+        <div class="grid-projects">
+            <article class="project-card SI-QT">
+                <div class="project-card-content">
+                    <h2 class="center">Space Invader</h2>
+                    <p class="grid-row-span-2">
+                    Reproduction du célèbre jeu "Space Invaders" développé sous Qt C++.<br>
+                    Un niveau de difficulté réglable est intégré au jeu pour configurer la vitesse d'apparition des aliens ainsi que le score à atteindre pour remporter la partie.<br>
+                    Un Sound design sommaire enrichit l'expérience de jeu, il met en valeur les aspects importants du jeu.
+                    </p>
+                    <div class="softwares">
+                        <img width="200" height="200" loading="lazy" class="lang-icon" src="./assets/images/icons/qt_icon.png" title="Qt">
+                        <img width="200" height="200" loading="lazy" class="lang-icon" src="./assets/images/icons/cpp_icon.png" title="C++">
+                        <img width="200" height="200" loading="lazy" class="lang-icon" src="./assets/images/icons/github_icon.png" title="GitHub">
+                    </div>
+                    <a class="neon-button" href="https://github.com/guilhemmazoyer/Qt_space_invader" target="_blank">En savoir plus</a>
+                </div>
+            </article>
+
+            <article class="project-card PY-PARS">
+                <div class="project-card-content">
+                    <h2 class="center">Parseur d'articles<br>scientifiques</h2>
+                    <p class="grid-row-span-2">
+                    Programme Python réalisé à l'UBS de Vannes pour aider les chercheurs de l'IRISA.<br>
+                    Ce programme fait le découpage d'articles scientifiques selon des catégories connues. Nous nous attardons sur la récupération du nom du fichier, du titre du document, de ses auteurs et leurs affiliations, des parties du texte et des références.<br>
+                    Toutes ces parties sont récupérées et rédigées dans un fichier Txt ou XML formaté.
+                    Le choix des fichiers PDF à traiter se fait à partir d'un menu textuel.
+                    </p>
+                    <div class="softwares">
+                        <img width="200" height="200" loading="lazy" class="lang-icon" src="./assets/images/icons/py_icon.png" title="Python">
+                        <img width="200" height="200" loading="lazy" class="lang-icon" src="./assets/images/icons/vscode_icon.png" title="VS Code">
+                        <img width="200" height="200" loading="lazy" class="lang-icon" src="./assets/images/icons/github_icon.png" title="GitHub">
+                    </div>
+                    <a class="neon-button" href="https://github.com/guilhemmazoyer/Parseur_lbgl" target="_blank">En savoir plus</a>
+                </div>
+            </article>
+
+            <article class="project-card JAVAGOTCHI">
+                <div class="project-card-content">
+                    <h2 class="center">Javagotchi</h2>
+                    <p class="grid-row-span-2">
+                    Javagotchi est un projet de jeu réalisé sous Java. Ce projet a été fait dans le cadre de l'enseignement de Java Swing.<br>
+                    Le joueur peut choisir d'élever 4 types de familiers. Un chien, un chat, un lapin et un robot.<br>
+                    Le joueur doit, pour maintenir son familier en vie, jouer au Javagotchi et s'occuper de son familier.<br>
+                    Pour cela il doit nourrir son familier, le faire jouer, le laver et le faire dormir.<br>
+                    Si le familier est abandonné ou s'il ne reçoit pas l'attention dont il a besoin, il meurt.
+                    </p>
+                    <div class="softwares">
+                        <img width="200" height="200" loading="lazy" class="lang-icon" src="./assets/images/icons/java_full_icon.jpg" title="Java">
+                        <img width="200" height="200" loading="lazy" class="lang-icon" src="./assets/images/icons/eclipse_icon.png" title="Eclipse">
+                        <img width="200" height="200" loading="lazy" class="lang-icon" src="./assets/images/icons/github_icon.png" title="GitHub">
+                    </div>
+                    <a class="neon-button" href="https://github.com/guilhemmazoyer/Javagotchi" target="_blank">En savoir plus</a>
+                </div>
+            </article>
+
+            <article class="project-card LABY">
+                <div class="project-card-content">
+                    <h2 class="center">Labyrinthe</h2>
+                    <p class="grid-row-span-2">
+                    Jeu de navigateur réalisé en JavaScript.<br>
+                    Ce petit jeu propose de parcourir un labyrinthe à la souris où le contact avec un mur est rédhibitoire.
+                    </p>
+                    <div class="softwares">
+                        <img width="200" height="200" loading="lazy" class="lang-icon" src="./assets/images/icons/html_icon.png" title="HTML">
+                        <img width="200" height="200" loading="lazy" class="lang-icon" src="./assets/images/icons/css_icon.png" title="CSS">
+                        <img width="200" height="200" loading="lazy" class="lang-icon" src="./assets/images/icons/js_icon.png" title="JavaScript">
+                        <img width="200" height="200" loading="lazy" class="lang-icon" src="./assets/images/icons/vscode_icon.png" title="VS Code">
+                    </div>
+                    <a class="neon-button" href="./labyrinthe/index.html" target="_blank">En savoir plus</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+
+    <div class="center">
+        <img class="divider" src="./assets/images/reviews/SideScroller2D/divider-content.png" alt="Séparateur">
+    </div>
+
 
     <section id="review">
         <div class="neon-title">
@@ -174,5 +292,7 @@
             </article>
         </div>
     </section>
+
+
 	<script src="./jslib/3d-mouse-hover.js "></script>
 </body>

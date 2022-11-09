@@ -1,0 +1,67 @@
+
+/* Title */
+
+.neon-title {
+    padding: 10vh 0 calc(15vh - 2rem) 0;
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.other-neon-title {
+    display: inline-block;
+    width: fit-content;
+    font-size: 3em;
+    background: radial-gradient(hsl(64, 100%, 75%), var(--clr-neon));
+    color: var(--clr-off-neon);
+    border: var(--clr-neon) 0.125em solid;
+    border-radius: 0.25em;
+    padding: 0.25em 0.75em;
+}
+
+#title {
+    font-size: 2em;
+    font-family: wallpainter;
+    transform: translateY(-10px);
+}
+
+
+/* Neon Button */
+
+.neon-button {
+    font-family: inherit;
+    width: fit-content;
+    height: fit-content;
+    font-size: 1.25em;
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--clr-neon);
+    border: var(--clr-neon) 0.125em solid;
+    border-radius: 0.25em;
+    padding: 0.25em 1em;
+    box-shadow: inset 0 0 0.5em 0 var(--clr-neon),
+                0 0 0.5em 0 var(--clr-neon);
+}
+
+.neon-button:hover, .neon-button:focus {
+    background: radial-gradient(hsl(64, 100%, 75%), var(--clr-neon));
+    color: var(--clr-off-neon);
+    box-shadow: 0 0 2em 0.25em var(--clr-neon);
+}
+
+@media screen and (max-width: 1700px) and (min-width: 1154px) {
+    body{
+        background-color: white;
+    }
+}
+
+@media screen and (max-width: 1153px) {
+    .neon-title {
+        padding: 5vh 0 calc(6vh - 2rem) 0;
+    }
+    
+    .neon-button {
+        font-size: 1em;
+    }
+}
