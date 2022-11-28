@@ -118,7 +118,7 @@
     .project-card-content {
         margin: auto;
         display: grid;
-        grid-template-rows: repeat(5, 1fr);
+        grid-template-rows: repeat(4, 1fr);
 
         font-family: inherit;
         opacity: 0;
@@ -140,7 +140,7 @@
     }
 
     .project-card-content h2 {
-        margin: auto auto 0 auto;
+        margin: auto 0;
         font-family: inherit;
         font-size: 2.5em;
         color: white;
@@ -168,16 +168,48 @@
         opacity: 1;
     }
 
+    .MC-WT {
+        background-image: url("../assets/images/gamecards/palais_tures_bateau.jpg");
+    }
+
+    .UE-TileBase {
+        background-image: url("../assets/images/gamecards/TilebasedGame.jpg");
+    }
+
+    .UE-SideScroller {
+        background-image: url("../assets/images/gamecards/SideScroller2D.jpg");
+    }
+
+    .PY-Renderer {
+        background-image: url("../assets/images/gamecards/Py3DShapeRenderer.jpg");
+    }
+
+    .Portfolio {
+        background-image: url("../assets/images/gamecards/website.jpg");
+    }
+
+    .MODELS {
+        background-image: url("../assets/images/gamecards/blender.jpg");
+    }
+
+    .PY-Tree {
+        background-image: url("../assets/images/gamecards/TreeGenerator.jpg");
+    }
+
     .SI-QT {
-        background-image: url("../assets/images/reviews/games-icon/P-LA.jpg");
+        background-image: url("../assets/images/gamecards/spaceinvaders.jpg");
+    }
+
+    .PY-PARS {
+        background-image: url("../assets/images/gamecards/parseur.jpg");
     }
 
     .JAVAGOTCHI {
-        background-image: url("../assets/images/reviews/games-icon/P-LA.jpg");
+        background-image: url("../assets/images/gamecards/javagotchi.jpg");
     }
 
-    .JAVAGOTCHI {
-        background-image: url("../assets/images/reviews/games-icon/P-LA.jpg");
+    .LABY {
+        background-image: url("../assets/images/gamecards/tp6_pre.jpg");
     }
 
 
@@ -193,7 +225,7 @@
         display: grid;
         gap: 4rem 6rem;
         grid-template-columns: repeat(3, 1fr);
-        padding: 0 4rem 1rem 4rem;
+        padding: 0.5rem 4rem 0.5rem 4rem;
     }
 
     .game-card {
@@ -234,7 +266,6 @@
         margin: auto 0;
         font-family: inherit;
         font-size: 2.5em;
-        text-align: center;
         color: white;
         text-shadow: 2px 0 0 #000000, -2px 0 0 #000000, 0 2px 0 #000000, 0 -2px 0 #000000, 1px 1px #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000;
     }
@@ -290,6 +321,10 @@
         grid-column: span 3;
     }
     
+    .grid-col-span-4 {
+        grid-column: span 4;
+    }
+    
     .grid-col-span-5 {
         grid-column: span 5;
     }
@@ -308,11 +343,15 @@
 /* ########## */
 
     @media screen and (max-width: 1153px) {
-        body {
-            background: red;
-        }
-
         .neon-title {
             padding: 5vh 0 calc(6vh - 2rem) 0;
+        }
+
+        .grid-projects {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .grid-review {
+            grid-template-columns: repeat(2, 1fr);
         }
     }
