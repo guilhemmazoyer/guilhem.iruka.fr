@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Steam Wishlist Prices</title>
+  
+    <link rel="stylesheet" type="text/css" href="./steam2instantgaming.css" />
+</head>
+
+<body>
+  <div id="container">
+    <h1>Steam Wishlist Prices</h1>
+    <p>76561198153998352</p>
+    <form>
+      <label for="steam_id">Steam ID:</label>
+      <input type="text" id="steam_id" name="steam_id" required>
+      <br>
+      <button type="button" onclick="getWishlistPrices()">Get Wishlist Prices</button>
+      <script type="text/javascript" src="./steam2instantgaming.js"></script>
+    </form>
+    <div class="loading">Loading...</div>
+    <table id="wishlist_prices">
+      <tr>
+        <th>Game</th>
+        <th>Steam Price</th>
+        <th>Instant Gaming Price</th>
+      </tr>
+    </table>
+  </div>
+</body>
