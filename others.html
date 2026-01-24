@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio de Guilhem Mazoyer - Game Designer">
-    <title>Guilhem - Home</title>
+    <meta name="description" content="Portfolio de Guilhem Mazoyer - Others">
+    <title>Guilhem - Others</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=K2D:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 	<link rel="icon" type="image/png" href="./assets/icons/guilhem_icon.png"/>
-
+    
     <script>
         // Create transition overlay immediately to prevent flash
         (function() {
@@ -27,15 +27,12 @@
         })();
     </script>
 </head>
-<body class="page-home">
+<body class="page-others">
     <!-- Header -->
     <header class="header">
         <div class="header-left">
-            <span class="page-index">01</span>
-            <span class="page-title">Home</span>
-        </div>
-        <div class="header-center">
-            <h1 class="main-title">Guilhem Mazoyer</h1>
+            <span class="page-index">03</span>
+            <span class="page-title">Others</span>
         </div>
         <div class="header-right">
             <button class="music-toggle" id="musicToggle" aria-label="Toggle music"></button>
@@ -47,26 +44,19 @@
 
     <!-- Main Content -->
     <main class="main-content">
-        <div class="carousel-container">
-            <!-- Project Info (Left) -->
-            <div class="project-info">
-                <div class="project-number" id="projectNumber">01</div>
-                <div class="project-title" id="projectTitle">Gemini Rush</div>
-                <div class="project-year" id="projectYear">2024</div>
-                <div class="project-genre" id="projectGenre">Pvp race</div>
-                <div class="project-description" id="projectShortDescription">Pvp race</div>
+        <div class="projects-page">
+            <!-- Background Slideshow -->
+            <div class="background-slideshow" id="backgroundSlideshow"></div>
+            <div class="background-overlay"></div>
+            
+            <!-- Title Section -->
+            <div class="projects-title-section">
+                <h2 class="projects-main-title" id="projectsMainTitle">Others</h2>
             </div>
-
-            <!-- Carousel (Center) -->
-            <div class="carousel-wrapper">
-                <div class="carousel-stack" id="carouselStack">
-                    <!-- Images will be added dynamically -->
-                </div>
-            </div>
-
-            <!-- Scroll Indicator (Right) -->
-            <div class="scroll-indicator">
-                <span class="scroll-text">Scroll</span>
+            
+            <!-- Projects Grid -->
+            <div class="projects-grid" id="projectsGrid">
+                <!-- Projects will be added dynamically -->
             </div>
         </div>
     </main>
@@ -75,9 +65,6 @@
     <footer class="footer">
         <div class="footer-top">
             <a href="mailto:guilhem.mazoyer@laposte.net" class="footer-email">guilhem.mazoyer@laposte.net</a>
-            <div class="footer-bar">
-                <!-- Project indices will be added dynamically -->
-            </div>
             <div class="footer-time" id="footerTime">14:35 France</div>
         </div>
     </footer>
@@ -115,9 +102,8 @@
     <script src="js/data/others-data.js"></script>
     <script src="js/music-handler.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/carousel.js"></script>
+    <script src="js/projects-grid.js"></script>
     <script src="js/menu-hover.js"></script>
-    <script src="js/loading-animation.js"></script>
     <script src="js/title-animation.js"></script>
 </body>
 </html>

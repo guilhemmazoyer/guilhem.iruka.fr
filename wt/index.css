@@ -23,7 +23,7 @@ body {
 /* Title */
 
 .neon-title {
-    padding: 10vh 0 calc(15vh - 2rem) 0;
+    padding: 3vh 0 calc(10vh - 2rem) 0;
     position: relative;
     width: fit-content;
     margin: 0 auto;
@@ -107,23 +107,23 @@ body {
 }
 
 .PRE-GUNIVERS {
-    background-image: url("../assets/images/presentation_wt.jpg");
+    background-image: url("../assets/images/wt/buttons/presentation_wt.jpg");
 }
 
 .MUSIQUES {
-    background-image: url("../assets/images/musiques_wt.jpg");
+    background-image: url("../assets/images/wt/buttons/musiques_wt.jpg");
 }
 
 .SCENARIO {
-    background-image: url("../assets/images/scenario_wt.jpg");
+    background-image: url("../assets/images/wt/buttons/scenario_wt.jpg");
 }
 
 .VISUELS {
-    background-image: url("../assets/images/visuels_wt.jpg");
+    background-image: url("../assets/images/wt/buttons/visuels_wt.jpg");
 }
 
 .SYSTEME {
-    background-image: url("../assets/images/systemes_wt.jpg");
+    background-image: url("../assets/images/wt/buttons/systemes_wt.jpg");
 }
 
 

@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio de Guilhem Mazoyer - Game Designer">
-    <title>Guilhem - Home</title>
+    <meta name="description" content="Portfolio de Guilhem Mazoyer - Contact">
+    <title>Guilhem - Contact</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=K2D:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 	<link rel="icon" type="image/png" href="./assets/icons/guilhem_icon.png"/>
-
+    
     <script>
         // Create transition overlay immediately to prevent flash
         (function() {
@@ -27,15 +27,12 @@
         })();
     </script>
 </head>
-<body class="page-home">
+<body class="page-contact">
     <!-- Header -->
     <header class="header">
         <div class="header-left">
-            <span class="page-index">01</span>
-            <span class="page-title">Home</span>
-        </div>
-        <div class="header-center">
-            <h1 class="main-title">Guilhem Mazoyer</h1>
+            <span class="page-index">04</span>
+            <span class="page-title">Contact</span>
         </div>
         <div class="header-right">
             <button class="music-toggle" id="musicToggle" aria-label="Toggle music"></button>
@@ -47,26 +44,47 @@
 
     <!-- Main Content -->
     <main class="main-content">
-        <div class="carousel-container">
-            <!-- Project Info (Left) -->
-            <div class="project-info">
-                <div class="project-number" id="projectNumber">01</div>
-                <div class="project-title" id="projectTitle">Gemini Rush</div>
-                <div class="project-year" id="projectYear">2024</div>
-                <div class="project-genre" id="projectGenre">Pvp race</div>
-                <div class="project-description" id="projectShortDescription">Pvp race</div>
-            </div>
-
-            <!-- Carousel (Center) -->
-            <div class="carousel-wrapper">
-                <div class="carousel-stack" id="carouselStack">
-                    <!-- Images will be added dynamically -->
+        <div class="contact-page">
+            <div class="contact-content">
+                <!-- Left Section: Text Content -->
+                <div class="contact-text-section">
+                    <h2 class="contact-title">
+                        Let's<br/>Connect
+                    </h2>
+                    <p class="contact-description">
+                        <strong>Have a project in mind??</strong><br/>
+                        I'd love to hear what you're working on and show<br/>
+                        you how I can help. Whether you're creating a new<br/>
+                        game or developing your current product, I'm ready<br/>
+                        when you are.
+                    </p>
+                    <div class="contact-info">
+                        <a href="mailto:guilhem.mazoyer@laposte.net" class="contact-email">
+                            guilhem.mazoyer@laposte.net
+                        </a>
+                        <a href="tel:+33783035119" class="contact-phone">
+                            +33 7 83 03 51 19
+                        </a>
+                    </div>
                 </div>
-            </div>
-
-            <!-- Scroll Indicator (Right) -->
-            <div class="scroll-indicator">
-                <span class="scroll-text">Scroll</span>
+                
+                <!-- Right Section: Social Icons Grid -->
+                <div class="contact-social-section">
+                    <div class="social-icons-grid">
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="social-icon" id="social-itchio">
+                            <img src="assets/icons/itchio.png" alt="itch.io" />
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="social-icon" id="social-linkedin">
+                            <img src="assets/icons/linkedin.png" alt="LinkedIn" />
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="social-icon" id="social-github">
+                            <img src="assets/icons/github.png" alt="GitHub" />
+                        </a>
+                        <a href="assets/documents/cv_guilhem_mazoyer.pdf" target="_blank" rel="noopener noreferrer" class="social-icon" id="social-cv">
+                            <img src="assets/icons/cv.png" alt="CV" />
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
@@ -74,10 +92,6 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-top">
-            <a href="mailto:guilhem.mazoyer@laposte.net" class="footer-email">guilhem.mazoyer@laposte.net</a>
-            <div class="footer-bar">
-                <!-- Project indices will be added dynamically -->
-            </div>
             <div class="footer-time" id="footerTime">14:35 France</div>
         </div>
     </footer>
@@ -113,11 +127,11 @@
     <script src="js/data/projects-data.js"></script>
     <script src="js/data/games-data.js"></script>
     <script src="js/data/others-data.js"></script>
+    <script src="js/data/contact-data.js"></script>
     <script src="js/music-handler.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/carousel.js"></script>
+    <script src="js/contact-handler.js"></script>
     <script src="js/menu-hover.js"></script>
-    <script src="js/loading-animation.js"></script>
     <script src="js/title-animation.js"></script>
 </body>
 </html>
