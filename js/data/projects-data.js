@@ -5,26 +5,16 @@
 const projects = [
     {
         id: 1,
-        title: "Gemini Rush",
-        year: "2024",
-        genre: "LAN Racing Game",
-        shortDescription: "One race, Two roads, Infinite possibilities !",
-        image: "../assets/images/gemini-rush.jpg",
-        link: "https://guilhemmazoyer.itch.io/gemini-rush",
-        bgColor: "#4A3720"
-    },
-    {
-        id: 2,
         title: "Light Train",
         year: "2024",
         genre: "Coop Side-Scrolling Arcade Game",
-        shortDescription: "Survive with your fellow comrade and reach the maximum distance !",
+        shortDescription: "Survive with your fellow comrade and try to go as far as you can!",
         image: "../assets/images/light-train.jpg",
         link: "https://guilhemmazoyer.itch.io/light-train",
         bgColor: "#2a1a1a",
     },
     {
-        id: 3,
+        id: 2,
         title: "Lumibound",
         year: "2025",
         genre: "Infite Mirror Chess Game",
@@ -32,6 +22,16 @@ const projects = [
         image: "../assets/images/lumibound.jpg",
         link: "https://jolan-prat.itch.io/lumibound",
         bgColor: "#1f2b59",
+    },
+    {
+        id: 3,
+        title: "Gemini Rush",
+        year: "2024",
+        genre: "LAN Racing Game",
+        shortDescription: "One race, Two roads, Infinite possibilities !",
+        image: "../assets/images/gemini-rush.jpg",
+        link: "https://guilhemmazoyer.itch.io/gemini-rush",
+        bgColor: "#4A3720"
     },
     {
         id: 4,

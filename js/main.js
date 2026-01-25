@@ -61,8 +61,68 @@ function updateTime() {
 updateTime();
 setInterval(updateTime, 60000);
 
+
+
+// ============================================
+// TITLE ANIMATION ON TRIPLE CLICK
+// ============================================
+
+class TitleMenuInteraction {
+    constructor() {        
+        this.init();
+    }
+
+    init() {
+        // Find title elements based on page
+        const titles = this.findTitles();
+        
+        titles.forEach(title => {
+            if (title) {
+                this.setupClick(title);
+            }
+        });
+    }
+
+    findTitles() {
+        const titles = [];
+        
+        // Page title
+        const pageTitle = document.querySelector('.page-title');
+        if (pageTitle) titles.push(pageTitle);
+        
+        // Menu title
+        const menuTitle = document.querySelector('#menuTitle');
+        if (menuTitle) titles.push(menuTitle);
+        
+        return titles;
+    }
+
+    setupClick(titleElement) {
+        titleElement.addEventListener('click', (e) => {
+            this.handleClick(titleElement, e);
+        });
+    }
+
+    handleClick(titleElement, event) {
+        this.triggerAnimation();
+    }
+
+    triggerAnimation() {
+        if (menuOverlay) {
+            const isMenuOpen = menuOverlay.classList.contains('active');
+            if (isMenuOpen) {
+                menuOverlay.classList.remove('active');
+                document.body.style.overflow = '';
+            } else {
+                menuOverlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        }
+    }
+}
+
 // Initialize on page load
 document.addEventListener('DOMContentLoaded', () => {
     updateTime();
+    new TitleMenuInteraction();
 });
-

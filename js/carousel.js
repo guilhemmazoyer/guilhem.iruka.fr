@@ -243,7 +243,7 @@ class Carousel {
                 // Prevent scrolling for a short time
                 setTimeout(() => {
                     this.isScrolling = false;
-                }, 800);
+                }, 200);
             }
             
             // Prevent default scroll behavior
@@ -298,7 +298,7 @@ class Carousel {
                         this.updateProject(projectIndex);
                         setTimeout(() => {
                             this.isScrolling = false;
-                        }, 800);
+                        }, 200);
                     }
                 }
                 return;
@@ -312,7 +312,7 @@ class Carousel {
                     this.next();
                     setTimeout(() => {
                         this.isScrolling = false;
-                    }, 800);
+                    }, 200);
                 }
             } else if (e.key === 'ArrowDown' || e.key === 'ArrowLeft') {
                 e.preventDefault();
@@ -321,7 +321,7 @@ class Carousel {
                     this.previous();
                     setTimeout(() => {
                         this.isScrolling = false;
-                    }, 800);
+                    }, 200);
                 }
             }
         };

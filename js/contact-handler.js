@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const itchioLink = document.getElementById('social-itchio');
         const linkedinLink = document.getElementById('social-linkedin');
         const githubLink = document.getElementById('social-github');
-        const artstationLink = document.getElementById('social-artstation');
+        const cvLink = document.getElementById('social-cv');
         
         if (itchioLink && contactLinks.itchio) {
             itchioLink.href = contactLinks.itchio;
@@ -25,8 +25,8 @@ document.addEventListener('DOMContentLoaded', () => {
             githubLink.href = contactLinks.github;
         }
         
-        if (artstationLink && contactLinks.artstation) {
-            artstationLink.href = contactLinks.artstation;
+        if (artstationLink && contactLinks.cv) {
+            cvLink.href = contactLinks.cv;
         }
     }
 });
