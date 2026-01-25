@@ -97,7 +97,7 @@ class ProjectsGrid {
 
     startBackgroundRotation() {
         if (this.backgroundImages.length <= 1) return;
-        
+
         setInterval(() => {
             const images = this.backgroundSlideshow.querySelectorAll('img');
             if (images.length === 0) return;

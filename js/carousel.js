@@ -37,6 +37,7 @@ class Carousel {
         this.setupScrollListener();
         this.setupSwipeListener();
         this.setupKeyboardListener();
+        this.resetCarousselAutoRotation();
     }
 
     createImages() {
@@ -235,8 +236,10 @@ class Carousel {
                 
                 if (scrollDelta > 0) {
                     this.next();
+                    this.resetCarousselAutoRotation();
                 } else {
                     this.previous();
+                    this.resetCarousselAutoRotation();
                 }
                 
                 scrollDelta = 0;
@@ -272,8 +275,10 @@ class Carousel {
             if (Math.abs(swipeDistance) > minSwipeDistance) {
                 if (swipeDistance > 0) {
                     this.next();
+                    this.resetCarousselAutoRotation();
                 } else {
                     this.previous();
+                    this.resetCarousselAutoRotation();
                 }
             }
         };
@@ -297,6 +302,7 @@ class Carousel {
                     if (!this.isScrolling) {
                         this.isScrolling = true;
                         this.updateProject(projectIndex);
+                        this.resetCarousselAutoRotation();
                         setTimeout(() => {
                             this.isScrolling = false;
                         }, 200);
@@ -311,6 +317,7 @@ class Carousel {
                 if (!this.isScrolling) {
                     this.isScrolling = true;
                     this.next();
+                    this.resetCarousselAutoRotation();
                     setTimeout(() => {
                         this.isScrolling = false;
                     }, 200);
@@ -320,6 +327,7 @@ class Carousel {
                 if (!this.isScrolling) {
                     this.isScrolling = true;
                     this.previous();
+                    this.resetCarousselAutoRotation();
                     setTimeout(() => {
                         this.isScrolling = false;
                     }, 200);
@@ -339,6 +347,12 @@ class Carousel {
     previous() {
         const prevIndex = (this.currentIndex - 1 + this.projects.length) % this.projects.length;
         this.updateProject(prevIndex);
+    }
+
+    resetCarousselAutoRotation() {
+        clearInterval(this.carouselInterval);
+
+        this.carouselInterval = setInterval(() => {this.next();},6000)
     }
 }
 
