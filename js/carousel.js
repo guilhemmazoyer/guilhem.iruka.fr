@@ -49,6 +49,7 @@ class Carousel {
             const img = document.createElement('img');
             img.src = project.image;
             img.alt = project.title || 'Project image';
+            if(index<2){img.fetchPriority = "high"};
             img.className = 'carousel-image';
             img.dataset.index = index;
             

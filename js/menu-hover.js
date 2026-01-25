@@ -120,14 +120,14 @@ class MenuHover {
         // Positions are fixed percentages (will be converted to pixels)
         // X values are shifted by +0.1
         const positions = [
-            { x: 0.42, y: 0.58 },  // Position 1
-            { x: 0.425, y: 0.42 }, // Position 2
-            { x: 0.61, y: 0.73 }, // Position 3
-            { x: 0.63, y: 0.59 },  // Position 4
-            { x: 0.62, y: 0.41 }, // Position 5
-            { x: 0.64, y: 0.25 }, // Position 6
-            { x: 0.79, y: 0.61 },  // Position 7
-            { x: 0.80, y: 0.39 }, // Position 8
+            { x: 0.49, y: 0.58 },  // Position 1
+            { x: 0.495, y: 0.42 }, // Position 2
+            { x: 0.68, y: 0.73 }, // Position 3
+            { x: 0.70, y: 0.59 },  // Position 4
+            { x: 0.69, y: 0.41 }, // Position 5
+            { x: 0.71, y: 0.25 }, // Position 6
+            { x: 0.86, y: 0.61 },  // Position 7
+            { x: 0.87, y: 0.39 }, // Position 8
         ];
         
         // Convert percentages to pixel values based on current screen size
