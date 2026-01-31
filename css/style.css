@@ -1141,6 +1141,7 @@ body.background-reveal-animate::before {
 
     .main-title {
         font-size: clamp(1.2rem, 6vw, 2.5rem);
+        transition: background-color 0.6s ease; 
     }
 
     .header-right {
@@ -1160,8 +1161,8 @@ body.background-reveal-animate::before {
 
     /* Main Content Mobile */
     .main-content {
-        padding-top: 12vh;
-        padding-bottom: 15vh;
+        padding-top: 10vh;
+        padding-bottom: 11vh;
     }
 
     /* Landing Page Carousel Mobile */
@@ -1189,6 +1190,8 @@ body.background-reveal-animate::before {
         order: 1;
         width: 100%;
         gap: 0.25rem;
+        max-width: 100%;
+        padding-bottom: 7.5vh;
     }
 
     .project-number {
@@ -1225,12 +1228,12 @@ body.background-reveal-animate::before {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        gap: 0.75rem;
+        gap: 1rem;
         padding: 0;
     }
 
     .footer-email {
-        font-size: clamp(0.875rem, 3vw, 1rem);
+        font-size: 1.15rem;
     }
 
     .footer-bar {
@@ -1243,12 +1246,12 @@ body.background-reveal-animate::before {
     }
 
     .project-index-number {
-        font-size: 0.75rem;
-        padding: 0 0.75rem;
+        font-size: 1rem;
+        padding: 0 1rem;
     }
 
     .footer-time {
-        font-size: clamp(0.875rem, 3vw, 1rem);
+        font-size: 1.1rem;
         order: 3;
     }
 
@@ -1292,16 +1295,11 @@ body.background-reveal-animate::before {
     /* Contact Page Mobile */
     .contact-page {
         padding: 2rem 1.5rem;
-        padding-left: 1.5rem;
     }
 
     .contact-content {
-        grid-template-columns: 1fr;
-        gap: 3rem;
-    }
-
-    .contact-text-section {
-        order: 1;
+        display: flex;
+        flex-direction: column;
     }
 
     .contact-title {
@@ -1320,20 +1318,43 @@ body.background-reveal-animate::before {
         font-size: clamp(1rem, 5vw, 2rem);
     }
 
+    .personnal-information {
+        padding: 0 1vh;
+    }
+
+    .personnal-text p {
+        padding: 0;
+        width: 125%;
+        font-size: 3.75vw;
+    }
+
+    .biggerText {
+        font-size: 5vw;
+    }
+
+    .personnal-image img {
+        width: 100%;
+        padding-left: 10vw;
+    }
+
     .contact-social-section {
-        order: 2;
-        padding-bottom: 3rem;
+        width: 100%;
     }
 
     .social-icons-grid {
-        grid-template-columns: repeat(2, 1fr);
-        max-width: 100%;
-        gap: 1.5rem;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        padding: 1rem;
     }
 
     .social-icon {
-        width: 100%;
         aspect-ratio: 1;
+        max-width: none;
+    }
+
+    .social-icon:hover {
+        transform: none;
+        box-shadow: none;
     }
 }
 
@@ -1345,8 +1366,8 @@ body.background-reveal-animate::before {
     }
 
     .main-content {
-        padding-top: 10vh;
-        padding-bottom: 12vh;
+        padding-top: 5vh;
+        padding-bottom: 4vh;
     }
 
     .carousel-container {
@@ -1379,13 +1400,4 @@ body.background-reveal-animate::before {
         padding: 1rem;
         gap: 1rem;
     }
-
-    .contact-page {
-        padding: 1.5rem 1rem;
-    }
-
-    .social-icons-grid {
-        gap: 1rem;
-    }
 }
-
