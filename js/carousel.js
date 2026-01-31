@@ -114,7 +114,9 @@ class Carousel {
         // Update background color
         if (project.bgColor) {
             this.body.style.backgroundColor = project.bgColor;
-            this.landingMainTitle.style.backgroundColor = project.bgColor;
+            requestAnimationFrame(() => {
+                this.landingMainTitle.style.backgroundColor = project.bgColor;
+            });
         }
         
         // Update carousel images
