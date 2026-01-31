@@ -13,7 +13,6 @@ class Carousel {
         
         // DOM elements
         this.carouselStack = document.getElementById('carouselStack');
-        this.landingMainTitle = document.getElementById('landing-main-title');
         this.projectNumber = document.getElementById('projectNumber');
         this.projectTitle = document.getElementById('projectTitle');
         this.projectYear = document.getElementById('projectYear');
@@ -114,9 +113,6 @@ class Carousel {
         // Update background color
         if (project.bgColor) {
             this.body.style.backgroundColor = project.bgColor;
-            requestAnimationFrame(() => {
-                this.landingMainTitle.style.backgroundColor = project.bgColor;
-            });
         }
         
         // Update carousel images
