@@ -21,7 +21,7 @@ const projects = [
         shortDescription: "Shoot your opponent by combining all you skills and reflecting on as many mirrors as possible !",
         image: "../assets/images/lumibound.jpg",
         link: "https://jolan-prat.itch.io/lumibound",
-        bgColor: "#1f2b59",
+        bgColor: "#435391",
     },
     {
         id: 3,
