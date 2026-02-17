@@ -1,8 +1,8 @@
 import csv
 import json
 
-INPUT_CSV = "Trucs de la maison - ReadyForExtract.csv"
-OUTPUT_JSON = "data.json"
+INPUT_CSV = "give/Give - ReadyForExtract.csv"
+OUTPUT_JSON = "give/data.json"
 
 items = []
 

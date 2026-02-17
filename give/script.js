@@ -3,7 +3,7 @@ let itemsData = [];
 
 async function loadItems() {
     try {
-        const response = await fetch('data.json');
+        const response = await fetch("data.json?t=" + Date.now());
         itemsData = await response.json();
         displayItems();
     } catch (error) {
