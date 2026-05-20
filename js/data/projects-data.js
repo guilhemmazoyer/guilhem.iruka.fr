@@ -15,16 +15,6 @@ const projects = [
     },
     {
         id: 2,
-        title: "Lumibound",
-        year: "2025",
-        genre: "Infite Mirror Chess Game",
-        shortDescription: "Shoot your opponent by combining all you skills and reflecting on as many mirrors as possible !",
-        image: "../assets/images/lumibound.jpg",
-        link: "https://jolan-prat.itch.io/lumibound",
-        bgColor: "#435391",
-    },
-    {
-        id: 3,
         title: "Gemini Rush",
         year: "2024",
         genre: "LAN Racing Game",
@@ -32,6 +22,16 @@ const projects = [
         image: "../assets/images/gemini-rush.jpg",
         link: "https://guilhemmazoyer.itch.io/gemini-rush",
         bgColor: "#4A3720"
+    },
+    {
+        id: 3,
+        title: "Lumibound",
+        year: "2025",
+        genre: "Infite Mirror Chess Game",
+        shortDescription: "Shoot your opponent by combining all you skills and reflecting on as many mirrors as possible !",
+        image: "../assets/images/lumibound.jpg",
+        link: "https://jolan-prat.itch.io/lumibound",
+        bgColor: "#435391",
     },
     {
         id: 4,
